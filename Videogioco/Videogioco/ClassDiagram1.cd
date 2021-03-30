@@ -1,4 +1,60 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Videogioco.Personaggio">
+    <Position X="7.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Personaggio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Videogioco.Arma">
+    <Position X="4.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Arma.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Videogioco.Armatura">
+    <Position X="2.5" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Armatura.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Videogioco.Equipaggiamento">
+    <Position X="4.5" Y="0.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Videogioco.Equipaggiamento.rarita" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Equipaggiamento.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQEAAAACAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Equipaggiamento.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Videogioco.Negozio">
+    <Position X="9.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Negozio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Videogioco.Battaglia">
+    <Position X="8.25" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Battaglia.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Videogioco.Giocatore">
+    <Position X="10.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Giocatore.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>
