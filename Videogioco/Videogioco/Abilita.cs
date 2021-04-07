@@ -31,5 +31,10 @@ namespace Videogioco
         {
             throw new System.NotImplementedException();
         }
+
+        public void selezione()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
