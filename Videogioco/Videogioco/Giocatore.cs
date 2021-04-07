@@ -38,12 +38,20 @@ namespace Videogioco
             }
         }
 
-        public void Writing()
+        public Videogioco.Impostazione Impostazioni
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public void Scrittura()
         {
             throw new System.NotImplementedException();
         }
 
-        public void Reading()
+        public void Lettura()
         {
             throw new System.NotImplementedException();
         }

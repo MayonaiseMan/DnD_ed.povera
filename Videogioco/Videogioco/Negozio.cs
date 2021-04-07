@@ -15,12 +15,17 @@ namespace Videogioco
             throw new System.NotImplementedException();
         }
 
-        public void Reading()
+        public void Lettura()
         {
             throw new System.NotImplementedException();
         }
 
         public void XpBoost()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Scrittura()
         {
             throw new System.NotImplementedException();
         }

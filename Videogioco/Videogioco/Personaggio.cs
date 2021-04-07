@@ -26,12 +26,12 @@ namespace Videogioco
         int _abilita1, _abilita2;
         int Ka, Kd;
 
-        public void Writing()
+        public void Scrittura()
         {
             throw new System.NotImplementedException();
         }
 
-        public void Reading()
+        public void Lettura()
         {
             throw new System.NotImplementedException();
         }
@@ -45,5 +45,37 @@ namespace Videogioco
         }
 
         private int _exp;
+
+        public void UsaAbilita()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Attacca()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Disimpegna()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void cambiaEquipaggiamento()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        private string _immagine;
+
+        public void UsaArma()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void UsaArmatura()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -5,25 +5,21 @@ using System.Text;
 
 namespace Videogioco
 {
-    public abstract class Equipaggiamento
+    public class Impostazione
     {
-        private string _nome;
-        public enum ra {comune, raro, speciale, divino, singolarita };
-        ra _rarita;
-        double _modificatore;
-        int _buy, _sell;
+        private bool _musica;
 
-        public void Scrittura()
+        public Impostazione()
         {
             throw new System.NotImplementedException();
         }
 
-        public void Lettura()
+        public void Musica()
         {
             throw new System.NotImplementedException();
         }
 
-        public void Abilita()
+        public void Bgm()
         {
             throw new System.NotImplementedException();
         }
