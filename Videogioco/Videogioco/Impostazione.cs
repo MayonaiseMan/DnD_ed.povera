@@ -8,6 +8,7 @@ namespace Videogioco
     public class Impostazione
     {
         private bool _musica;
+        private int _bgm;
 
         public Impostazione()
         {
