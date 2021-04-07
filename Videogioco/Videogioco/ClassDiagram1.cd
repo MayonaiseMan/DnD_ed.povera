@@ -1,59 +1,90 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="Videogioco.Personaggio">
-    <Position X="7.25" Y="2.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Personaggio.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="Videogioco.Arma">
-    <Position X="4.5" Y="3" Width="1.5" />
+    <Position X="4.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Arma.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Videogioco.Armatura">
-    <Position X="2.5" Y="3" Width="1.5" />
+    <Position X="2.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Armatura.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Videogioco.Equipaggiamento">
     <Position X="4.5" Y="0.5" Width="1.5" />
     <NestedTypes>
-      <Enum Name="Videogioco.Equipaggiamento.rarita" Collapsed="true">
+      <Enum Name="Videogioco.Equipaggiamento.ra" Collapsed="true">
         <TypeIdentifier>
           <NewMemberFileName>Equipaggiamento.cs</NewMemberFileName>
         </TypeIdentifier>
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AQEAAAACAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAgAAAAAAAACAQAAAgAAAgAE=</HashCode>
       <FileName>Equipaggiamento.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Videogioco.Negozio">
-    <Position X="9.5" Y="2.5" Width="1.5" />
+    <Position X="10.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
       <FileName>Negozio.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Videogioco.Battaglia">
-    <Position X="8.25" Y="1.25" Width="1.5" />
+    <Position X="10.25" Y="2" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Battaglia.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Videogioco.Giocatore">
-    <Position X="10.75" Y="1.25" Width="1.5" />
+    <Position X="7" Y="0.75" Width="1.5" />
+    <AssociationLine Name="Battle" Type="Videogioco.Battaglia" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.25" Y="2.238" />
+        <Point X="8.25" Y="2.725" />
+        <Point X="10.25" Y="2.725" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAEAAAAAACAAAAACAAAAAAAAAgAAAgAA=</HashCode>
+      <FileName>Giocatore.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Shop" />
+      <Property Name="Battle" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Personaggi" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="Videogioco.Personaggio">
+    <Position X="10.25" Y="3.5" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Videogioco.Personaggio.razza" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Personaggio.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AQEIACAAAABEAAAAAAAAAAAAUAAAAACAAAAAgAAAgAA=</HashCode>
+      <FileName>Personaggio.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AbilitaPossibili" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Videogioco.Abilita">
+    <Position X="13" Y="3.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Giocatore.cs</FileName>
+      <FileName>Abilita.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

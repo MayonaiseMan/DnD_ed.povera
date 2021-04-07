@@ -5,12 +5,22 @@ using System.Text;
 
 namespace Videogioco
 {
-    public class Equipaggiamento
+    public abstract class Equipaggiamento
     {
-        private string nome;
-        public enum rarita {comune, raro, speciale, divino, singolarita };
-        double modificatore;
-        int buy, sell;
+        private string _nome;
+        public enum ra {comune, raro, speciale, divino, singolarita };
+        ra _rarita;
+        double _modificatore;
+        int _buy, _sell;
 
+        public void Writing()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Reading()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

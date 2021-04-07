@@ -7,5 +7,14 @@ namespace Videogioco
 {
     public class Negozio
     {
+        public Negozio()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void Reading()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -7,5 +7,14 @@ namespace Videogioco
 {
     public class Battaglia
     {
+        public Battaglia()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void RoundGo()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

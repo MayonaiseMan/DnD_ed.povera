@@ -7,5 +7,11 @@ namespace Videogioco
 {
     public class Arma : Equipaggiamento
     {
+        private int _valoreAttacco;
+
+        public Arma()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }
