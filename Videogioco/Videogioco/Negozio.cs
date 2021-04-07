@@ -7,12 +7,20 @@ namespace Videogioco
 {
     public class Negozio
     {
+        List<Arma> _armi;
+        List<Armatura> _armature;
+
         public Negozio()
         {
             throw new System.NotImplementedException();
         }
 
         public void Reading()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void XpBoost()
         {
             throw new System.NotImplementedException();
         }

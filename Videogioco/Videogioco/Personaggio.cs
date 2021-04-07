@@ -43,5 +43,7 @@ namespace Videogioco
             {
             }
         }
+
+        private int _exp;
     }
 }

@@ -31,28 +31,28 @@
   <Class Name="Videogioco.Negozio">
     <Position X="10.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAIAAAAAAAAAAAAgAABAAA=</HashCode>
       <FileName>Negozio.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Videogioco.Battaglia">
-    <Position X="10.25" Y="2" Width="1.5" />
+    <Position X="10.25" Y="2.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Battaglia.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Videogioco.Giocatore">
-    <Position X="7" Y="0.75" Width="1.5" />
+    <Position X="7" Y="0.5" Width="1.5" />
     <AssociationLine Name="Battle" Type="Videogioco.Battaglia" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="8.25" Y="2.238" />
-        <Point X="8.25" Y="2.725" />
-        <Point X="10.25" Y="2.725" />
+        <Point X="8.25" Y="2.44" />
+        <Point X="8.25" Y="3.475" />
+        <Point X="10.25" Y="3.475" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAEAAAAAACAAAAACAAAAAAAAAgAAAgAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAEAAAAAACAAAAACAAAAAAAABgAAAgAA=</HashCode>
       <FileName>Giocatore.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -64,7 +64,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Videogioco.Personaggio">
-    <Position X="10.25" Y="3.5" Width="1.5" />
+    <Position X="10.25" Y="4.25" Width="1.5" />
     <NestedTypes>
       <Enum Name="Videogioco.Personaggio.razza" Collapsed="true">
         <TypeIdentifier>
@@ -72,18 +72,34 @@
         </TypeIdentifier>
       </Enum>
     </NestedTypes>
+    <AssociationLine Name="_armaEqipaggiata" Type="Videogioco.Arma" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="7.467" />
+        <Point X="5.188" Y="7.467" />
+        <Point X="5.188" Y="6.184" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="_armaturaEquipaggiata" Type="Videogioco.Armatura" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="10.25" Y="7.688" />
+        <Point X="3.25" Y="7.688" />
+        <Point X="3.25" Y="6.184" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AQEIACAAAABEAAAAAAAAAAAAUAAAAACAAAAAgAAAgAA=</HashCode>
+      <HashCode>AQEIACAAAABEAAAAAAAAAAAAUAAAAACAAAAAgAAAwAA=</HashCode>
       <FileName>Personaggio.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
+      <Field Name="_armaEqipaggiata" />
+      <Field Name="_armaturaEquipaggiata" />
       <Property Name="AbilitaPossibili" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Videogioco.Abilita">
-    <Position X="13" Y="3.5" Width="1.5" />
+    <Position X="12.25" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAABAAAiAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAA=</HashCode>
       <FileName>Abilita.cs</FileName>
     </TypeIdentifier>
   </Class>

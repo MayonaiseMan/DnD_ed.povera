@@ -7,6 +7,8 @@ namespace Videogioco
 {
     public class Giocatore
     {
+        private int _soldi;
+
         public Giocatore()
         {
             throw new System.NotImplementedException();
