@@ -5,12 +5,12 @@ using System.Text;
 
 namespace Videogioco
 {
-    public class Negozio
+    public class Inventario
     {
-        List<Arma> _armi;
-        List<Armatura> _armature;
+        List<Arma> _armiPossedute;
+        List<Armatura> _armaturePossedute;
 
-        public Negozio()
+        public Inventario()
         {
             throw new System.NotImplementedException();
         }
@@ -20,17 +20,12 @@ namespace Videogioco
             throw new System.NotImplementedException();
         }
 
-        public void XpBoost()
-        {
-            throw new System.NotImplementedException();
-        }
-
         public void Scrittura()
         {
             throw new System.NotImplementedException();
         }
 
-        public void Apra()
+        public void Apri()
         {
             throw new System.NotImplementedException();
         }

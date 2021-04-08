@@ -46,6 +46,22 @@ namespace Videogioco
             }
         }
 
+        public Videogioco.Inventario Inventario
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
+        public Videogioco.Statistiche Stat
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public void Scrittura()
         {
             throw new System.NotImplementedException();
