@@ -13,5 +13,13 @@ namespace Videogioco
         {
             throw new System.NotImplementedException();
         }
+
+        public AbilitaArmature AbilitaArmature
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

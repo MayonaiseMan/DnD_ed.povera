@@ -6,13 +6,19 @@
       <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Arma.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AbilitaArmature" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="Videogioco.Armatura">
     <Position X="2.5" Y="4.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
+      <HashCode>BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Armatura.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="AbilitaArmi" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="Videogioco.Equipaggiamento">
     <Position X="0.5" Y="1" Width="1.5" />
@@ -24,7 +30,7 @@
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAAAIAAAAAAAAAIAAAAAAgAAAAAAAACAQAAAACAAQAE=</HashCode>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAgAAAAAAAACAQAAAACAAQAE=</HashCode>
       <FileName>Equipaggiamento.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -35,6 +41,8 @@
         <Point X="10.25" Y="0.898" />
         <Point X="0.315" Y="0.898" />
         <Point X="0.315" Y="6.485" />
+        <Point X="2.667" Y="6.485" Type="JumpStart" />
+        <Point X="2.833" Y="6.485" Type="JumpEnd" />
         <Point X="3.286" Y="6.485" />
         <Point X="3.286" Y="6.184" />
         <Point X="4.75" Y="6.184" />
@@ -53,38 +61,51 @@
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AEAAAAAAAAAAAAAAAAAAAQAIAAAAAAAAAAAAACABQAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAQAIgAAAAAIAAAAAACABQAA=</HashCode>
       <FileName>Negozio.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Giocatore" />
+    </ShowAsAssociation>
     <ShowAsCollectionAssociation>
       <Field Name="_armi" />
       <Field Name="_armature" />
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Videogioco.Battaglia">
-    <Position X="11.25" Y="3.5" Width="1.5" />
+    <Position X="11.75" Y="5.5" Width="1.5" />
+    <AssociationLine Name="Giocatore" Type="Videogioco.Giocatore" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="11.75" Y="6.981" />
+        <Point X="9.472" Y="6.981" />
+        <Point X="9.472" Y="5.165" />
+        <Point X="8.125" Y="5.165" />
+        <Point X="8.125" Y="3.959" />
+      </Path>
+    </AssociationLine>
     <TypeIdentifier>
-      <HashCode>QAAAEAAAACAAAAAAAABAAgAAAAAAAAAAAAAAACAAQAA=</HashCode>
+      <HashCode>QAAAEAAAACAAAAAAAABAAgAAgAAAAAAAAAAAACAAQAA=</HashCode>
       <FileName>Battaglia.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Field Name="_personaggio1" />
       <Field Name="_personaggio2" />
+      <Property Name="Giocatore" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Videogioco.Giocatore">
     <Position X="7" Y="1.25" Width="1.5" />
-    <AssociationLine Name="Battle" Type="Videogioco.Battaglia" FixedFromPoint="true" FixedToPoint="true">
+    <AssociationLine Name="Battle" Type="Videogioco.Battaglia" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="8.25" Y="3.19" />
-        <Point X="8.25" Y="5.137" />
-        <Point X="11.156" Y="5.137" />
-        <Point X="11.156" Y="4.655" />
-        <Point X="11.25" Y="4.655" />
+        <Point X="8.25" Y="3.959" />
+        <Point X="8.25" Y="5.074" />
+        <Point X="9.743" Y="5.074" />
+        <Point X="9.743" Y="6.655" />
+        <Point X="11.75" Y="6.655" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAEAAAAAACAABAACAAAAEAAIBACAAQAA=</HashCode>
+      <HashCode>AAQAAAAAAACAAEAAQAAACAABAACAAQAEAAIBACAAQAA=</HashCode>
       <FileName>Giocatore.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -115,6 +136,8 @@
         <Point X="13.75" Y="8.131" />
         <Point X="7.302" Y="8.131" Type="JumpStart" />
         <Point X="7.135" Y="8.131" Type="JumpEnd" />
+        <Point X="5.677" Y="8.131" Type="JumpStart" />
+        <Point X="5.511" Y="8.131" Type="JumpEnd" />
         <Point X="5.188" Y="8.131" />
         <Point X="5.188" Y="6.184" />
       </Path>
@@ -124,8 +147,10 @@
         <Point X="13.75" Y="8.467" />
         <Point X="7.302" Y="8.467" Type="JumpStart" />
         <Point X="7.135" Y="8.467" Type="JumpEnd" />
-        <Point X="3.25" Y="8.467" />
-        <Point X="3.25" Y="6.184" />
+        <Point X="5.677" Y="8.467" Type="JumpStart" />
+        <Point X="5.511" Y="8.467" Type="JumpEnd" />
+        <Point X="3.5" Y="8.467" />
+        <Point X="3.5" Y="6.184" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -146,24 +171,44 @@
     </TypeIdentifier>
   </Class>
   <Class Name="Videogioco.Impostazione">
-    <Position X="3.5" Y="0.5" Width="1.5" />
+    <Position X="3.5" Y="1" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAEAAAAAAAAAAAACAAAgAAAAAAAAAAAABAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAIAAAAAAAAAABAAAABA=</HashCode>
       <FileName>Impostazione.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Videogioco.Inventario">
-    <Position X="7.5" Y="5.25" Width="1.5" />
+    <Position X="7.5" Y="5.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AABAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAgAAACAAQAA=</HashCode>
+      <HashCode>AABAAAAAAAAAAAAAAAAAEAAAgAAAAAAAAgAAACAAQAA=</HashCode>
       <FileName>Inventario.cs</FileName>
     </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Giocatore" />
+    </ShowAsAssociation>
   </Class>
   <Class Name="Videogioco.Statistiche">
-    <Position X="9" Y="2.75" Width="1.5" />
+    <Position X="10.25" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAIAAAAAAAAAACIAQAA=</HashCode>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAgAIAAAAAAAAAACIAQAA=</HashCode>
       <FileName>Statistiche.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Giocatore" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="Videogioco.AbilitaArmi">
+    <Position X="1.5" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAEAQAAAAAAAAA=</HashCode>
+      <FileName>AbilitaArmi.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Videogioco.AbilitaArmature">
+    <Position X="1.5" Y="9.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgAAAAAAAAAAAAAABAAAAAAAAAAAAAAQAAAAAAAAA=</HashCode>
+      <FileName>AbilitaArmature.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

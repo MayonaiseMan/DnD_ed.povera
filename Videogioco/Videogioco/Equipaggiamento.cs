@@ -22,10 +22,5 @@ namespace Videogioco
         {
             throw new System.NotImplementedException();
         }
-
-        public void Abilita()
-        {
-            throw new System.NotImplementedException();
-        }
     }
 }

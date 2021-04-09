@@ -15,6 +15,14 @@ namespace Videogioco
             throw new System.NotImplementedException();
         }
 
+        public Giocatore Giocatore
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public void Lettura()
         {
             throw new System.NotImplementedException();

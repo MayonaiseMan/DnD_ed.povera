@@ -5,39 +5,24 @@ using System.Text;
 
 namespace Videogioco
 {
-    public class Statistiche
+    public class AbilitaArmi
     {
-        private int _personaggio;
-
-        public Statistiche()
+        public AbilitaArmi()
         {
             throw new System.NotImplementedException();
         }
 
-        public Giocatore Giocatore
-        {
-            get => default;
-            set
-            {
-            }
-        }
-
-        public void Lettura()
+        public void Seleziona()
         {
             throw new System.NotImplementedException();
         }
 
-        public void Scrittura()
+        public void Potenziamento()
         {
             throw new System.NotImplementedException();
         }
 
-        public void CambiaArma()
-        {
-            throw new System.NotImplementedException();
-        }
-
-        public void CambiaArmatura()
+        public void Concentrazione()
         {
             throw new System.NotImplementedException();
         }

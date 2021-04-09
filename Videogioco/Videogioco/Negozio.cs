@@ -15,6 +15,14 @@ namespace Videogioco
             throw new System.NotImplementedException();
         }
 
+        public Giocatore Giocatore
+        {
+            get => default;
+            set
+            {
+            }
+        }
+
         public void Lettura()
         {
             throw new System.NotImplementedException();
@@ -30,7 +38,7 @@ namespace Videogioco
             throw new System.NotImplementedException();
         }
 
-        public void Apra()
+        public void init()
         {
             throw new System.NotImplementedException();
         }

@@ -71,5 +71,25 @@ namespace Videogioco
         {
             throw new System.NotImplementedException();
         }
+
+        public void CreaPersonaggio()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void ApriInventario()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void ApriNegozioo()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public void ApriStat()
+        {
+            throw new System.NotImplementedException();
+        }
     }
 }

@@ -13,5 +13,13 @@ namespace Videogioco
         {
             throw new System.NotImplementedException();
         }
+
+        public AbilitaArmi AbilitaArmi
+        {
+            get => default;
+            set
+            {
+            }
+        }
     }
 }

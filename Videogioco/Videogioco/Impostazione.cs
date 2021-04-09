@@ -7,7 +7,7 @@ namespace Videogioco
 {
     public class Impostazione
     {
-        private bool _musica;
+        private bool _effetti;
         private int _bgm;
 
         public Impostazione()
@@ -15,7 +15,7 @@ namespace Videogioco
             throw new System.NotImplementedException();
         }
 
-        public void Musica()
+        public void Effetti()
         {
             throw new System.NotImplementedException();
         }
