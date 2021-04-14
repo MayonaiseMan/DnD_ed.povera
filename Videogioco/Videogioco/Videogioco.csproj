@@ -55,7 +55,16 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="AbilitaArmature.cs" />
+    <Compile Include="AbilitaArmi.cs" />
+    <Compile Include="FinestraGioco.xaml.cs">
+      <DependentUpon>FinestraGioco.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Statistiche.cs" />
+    <Page Include="FinestraGioco.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="MainWindow.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -69,7 +78,7 @@
     <Compile Include="Armatura.cs" />
     <Compile Include="Battaglia.cs" />
     <Compile Include="Equipaggiamento.cs" />
-    <Compile Include="Giocatore.cs" />
+    <Compile Include="Gioco.cs" />
     <Compile Include="Impostazione.cs" />
     <Compile Include="Inventario.cs" />
     <Compile Include="MainWindow.xaml.cs">

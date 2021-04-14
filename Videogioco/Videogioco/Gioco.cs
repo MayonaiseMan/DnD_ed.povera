@@ -5,61 +5,64 @@ using System.Text;
 
 namespace Videogioco
 {
-    public class Giocatore
-    {
-        private int _soldi;
 
-        public Giocatore()
+    public class Gioco
+    {
+        
+        private int _soldi;
+        public int Soldi
         {
-            throw new System.NotImplementedException();
+            get
+            {
+                return _soldi;
+            }
+
+            set
+            {
+                if (value > 0)
+                    _soldi = value;
+            }
+        }
+
+        public Gioco()
+        {
+           
         }
 
         public Negozio Shop
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            private set;
         }
 
         public Battaglia Battle
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            private set;
         }
 
         public List<Personaggio> Personaggi
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            private set;
         }
 
-        public Videogioco.Impostazione Impostazioni
+        public Impostazione Impostazioni
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            private set;
         }
 
-        public Videogioco.Inventario Inventario
+        public Inventario Inventario
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            private set;
         }
 
-        public Videogioco.Statistiche Stat
+        public Statistiche Stat
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            private set;
         }
 
         public void Scrittura()

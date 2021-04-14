@@ -15,7 +15,7 @@ namespace Videogioco
             throw new System.NotImplementedException();
         }
 
-        public Giocatore Giocatore
+        public Gioco Giocatore
         {
             get => default;
             set
