@@ -25,35 +25,18 @@ namespace Videogioco
     {
         Impostazione impostazioni;
         FinestraGioco _mainGioco;
+        GestoreXml gestore;
 
         public MainWindow()
         {
             InitializeComponent();
+            gestore = new GestoreXml();
 
-            impostazioni = CaricaImpostazioni(Impostazione.CONFIG_FILE);
+            impostazioni = gestore.CaricaImpostazioni(Impostazione.CONFIG_FILE);
             impostazioni.AggiornaAudio();
         }
 
-        private Impostazione CaricaImpostazioni(string s)
-        {
-            try
-            {
-                XmlSerializer serializer = new XmlSerializer(typeof(Impostazione));
-
-                Impostazione tmp;
-
-                using (Stream reader = new FileStream(s, FileMode.Open))
-                {
-                    tmp = (Impostazione)serializer.Deserialize(reader);
-                }
-
-                return tmp;
-            }
-            catch
-            {
-                return new Impostazione();
-            }
-        }
+        
 
         private void start_btn_Click(object sender, RoutedEventArgs e)
         {

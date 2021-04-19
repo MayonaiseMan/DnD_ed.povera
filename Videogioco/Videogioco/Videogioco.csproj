@@ -60,6 +60,7 @@
     <Compile Include="FinestraGioco.xaml.cs">
       <DependentUpon>FinestraGioco.xaml</DependentUpon>
     </Compile>
+    <Compile Include="GestoreXml.cs" />
     <Compile Include="Statistiche.cs" />
     <Page Include="FinestraGioco.xaml">
       <SubType>Designer</SubType>

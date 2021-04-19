@@ -17,9 +17,9 @@ namespace Videogioco
     [XmlRoot(ElementName="impostazioni")]
     public class Impostazione
     {
-        [XmlAttribute(AttributeName="Effetti")]
+        [XmlElement(ElementName ="Effetti")]
         private bool _effetti;
-        [XmlAttribute(AttributeName = "Bgm")]
+        [XmlElement(ElementName = "Bgm")]
         private bool _bgm;
 
         public const string CONFIG_FILE = ".\\file\\config.xml";

@@ -2,14 +2,17 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml;
+using System.Xml.Serialization;
 
 namespace Videogioco
 {
-
+    [XmlRoot(ElementName ="Gioco")]
     public class Gioco
     {
-        
+        [XmlElement(ElementName ="Soldi")]
         private int _soldi;
+
         public int Soldi
         {
             get
