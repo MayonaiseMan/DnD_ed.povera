@@ -39,11 +39,11 @@ namespace Videogioco
             _effetti = true;
 
 
-            effetti = new OpenFileDialog();
-            mediaEffetti = new MediaPlayer();
+            //effetti = new OpenFileDialog();
+            //mediaEffetti = new MediaPlayer();
 
-            musica = new OpenFileDialog();
-            mediaMusica = new MediaPlayer();
+            //musica = new OpenFileDialog();
+            //mediaMusica = new MediaPlayer();
 
         }
 

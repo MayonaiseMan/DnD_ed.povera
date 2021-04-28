@@ -15,20 +15,13 @@ using System.Windows.Shapes;
 namespace Videogioco
 {
     /// <summary>
-    /// Logica di interazione per FinestraGioco.xaml
+    /// Logica di interazione per negozio.xaml
     /// </summary>
-    public partial class FinestraGioco : Window
+    public partial class negozio : Window
     {
-        Gioco gioco;
-        MainWindow start;
-
-        public FinestraGioco(MainWindow main, Impostazione i)
+        public negozio()
         {
             InitializeComponent();
-            gioco = new Gioco();
-            start = main;
         }
-
-
     }
 }

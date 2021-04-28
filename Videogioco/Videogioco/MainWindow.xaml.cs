@@ -32,8 +32,8 @@ namespace Videogioco
             InitializeComponent();
             gestore = new GestoreXml();
 
-            impostazioni = gestore.CaricaImpostazioni(Impostazione.CONFIG_FILE);
-            impostazioni.AggiornaAudio();
+            //impostazioni = gestore.CaricaImpostazioni(Impostazione.CONFIG_FILE);
+            //impostazioni.AggiornaAudio();
         }
 
         
@@ -42,7 +42,7 @@ namespace Videogioco
         {
             _mainGioco = new FinestraGioco(this, impostazioni);
             _mainGioco.Show();
-            this.Hide();
+            this.Close();
         }
     }
 }

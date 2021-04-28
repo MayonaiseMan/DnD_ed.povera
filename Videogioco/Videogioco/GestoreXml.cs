@@ -13,7 +13,7 @@ namespace Videogioco
     {
         public GestoreXml()
         {
-            throw new System.NotImplementedException();
+            
         }
 
 
@@ -32,11 +32,13 @@ namespace Videogioco
 
                 return tmp;
             }
-            catch
+            catch(Exception ex)
             {
-                MessageBox.Show("errore caricamento impostazioni audio");   
+                 
                 return new Impostazione();
             }
         }
+
+
     }
 }

@@ -5,11 +5,12 @@ using System.Text;
 
 namespace Videogioco
 {
+    
     public class AbilitaArmi
     {
         public AbilitaArmi()
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void Seleziona()
