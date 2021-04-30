@@ -7,24 +7,33 @@ namespace Videogioco
 {
     public class AbilitaArmature
     {
-        public AbilitaArmature()
+        Armatura _armatura;
+        public AbilitaArmature(Armatura armat)
         {
-            throw new System.NotImplementedException();
+            _armatura = armat;
         }
 
-        public void Seleziona()
+        public void Seleziona(int a)
         {
-            throw new System.NotImplementedException();
+            switch(a)
+            {
+                case 1:
+                    break;
+                    Rafforzamento();
+                case 2:
+                    AumentoVelocita();
+                    break;
+            }
         }
 
         public void Rafforzamento()
         {
-            throw new System.NotImplementedException();
+            
         }
 
         public void AumentoVelocita()
         {
-            throw new System.NotImplementedException();
+            
         }
     }
 }

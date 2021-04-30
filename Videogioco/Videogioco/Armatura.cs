@@ -10,24 +10,38 @@ namespace Videogioco
     [XmlRoot(ElementName = "armature")]
     public class Armatura : Equipaggiamento
     {
+
+
         [XmlElement(ElementName = "Kd")]
         private int _valoreDifesa;
 
         [XmlElement(ElementName = "abilitaArmatura")]
         private int _numAbilita;
 
-        public Armatura()
+        public Armatura(string nome, int rare, int acquisto, int vendita, int numAb, int K) :base(nome, rare, acquisto, vendita)
         {
-            
+            if (numAb >= 1 && numAb <= 2)
+            {
+                _numAbilita = numAb;
+            }
+
+            if (K >= 1 && K <= 12)
+            {
+                _valoreDifesa = K;
+            }
+        }
+
+        void CreaAbilita()
+        {
+            AbilitaArmetura = new AbilitaArmature(this);
         }
 
 
-        public AbilitaArmi AbilitaArmi
+        public AbilitaArmature AbilitaArmetura
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;
+            
         }
     }
 }

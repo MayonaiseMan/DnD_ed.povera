@@ -16,18 +16,36 @@ namespace Videogioco
         [XmlElement(ElementName = "abilitaArma")]
         private int _numAbilita;
 
-        public Arma()
+        public Arma(string nome, int rare, int acquisto, int vendita, int numAb, int K) : base(nome, rare, acquisto, vendita)
         {
+            if(numAb >= 1 && numAb <= 2)
+            {
+                _numAbilita = numAb;
+            }
+
+            if(K >= 1 && K <= 12)
+            {
+                _valoreAttacco = K;
+            }
+
             
         }
 
-        
-        public AbilitaArmature AbilitaArmature
+        void CreaAbilita()
         {
-            get => default;
-            set
-            {
-            }
+            AbilitaArma = new AbilitaArmi(this);
+        }
+
+        void UsaAbilità()
+        {
+
+        }
+
+        
+        public AbilitaArmi AbilitaArma
+        {
+            get;
+            set;
         }
     }
 }
