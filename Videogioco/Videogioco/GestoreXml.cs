@@ -39,6 +39,30 @@ namespace Videogioco
             }
         }
 
+        public Negozio CaricaNegozio(string s)
+        {
+
+        }
+
+        public Negozio CaricaPersonaggio(string s)
+        {
+
+        }
+
+        public void ScriviNegozio(string s)
+        {
+
+        }
+
+        public void ScriviPersonaggo(string s)
+        {
+
+        }
+
+        public void ScriviImpostazioni(string s)
+        {
+
+        }
 
     }
 }
