@@ -16,6 +16,8 @@ namespace Videogioco
         [XmlElement(ElementName = "abilitaArma")]
         private int _numAbilita;
 
+        public enum genereArma {Pugnale = 1, SpadaLunga = 2, Maglio = 3, AsciaBipenne = 4, Randello = 5, Balestra = 6, Scimitarra = 7};
+
         public Arma(string nome, int rare, int acquisto, int vendita, int numAb, int K) : base(nome, rare, acquisto, vendita)
         {
             if(numAb >= 1 && numAb <= 2)

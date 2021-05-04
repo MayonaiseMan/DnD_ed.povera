@@ -2,6 +2,13 @@
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Videogioco.Arma">
     <Position X="12" Y="7.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Videogioco.Arma.genereArma" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Arma.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
     <TypeIdentifier>
       <HashCode>AAAAAABEAAAAAAAAAAAAIAIgAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Arma.cs</FileName>
@@ -148,7 +155,7 @@
     </ShowAsCollectionAssociation>
   </Class>
   <Class Name="Videogioco.Statistiche">
-    <Position X="17.75" Y="5.25" Width="1.5" />
+    <Position X="17.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAgAIAAAAAAAAAACIAQAA=</HashCode>
       <FileName>Statistiche.cs</FileName>
@@ -174,8 +181,15 @@
   <Class Name="Videogioco.GestoreXml">
     <Position X="5.75" Y="9.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAACAAAAhABAAAAAAACAAAAAAgAAAA=</HashCode>
       <FileName>GestoreXml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Videogioco.GeneratoreOggetti">
+    <Position X="19.5" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAACAA=</HashCode>
+      <FileName>GeneratoreOggetti.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

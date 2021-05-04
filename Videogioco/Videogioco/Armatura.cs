@@ -18,6 +18,8 @@ namespace Videogioco
         [XmlElement(ElementName = "abilitaArmatura")]
         private int _numAbilita;
 
+        public enum genereArmatura {leggera = 1, media = 2, pesante = 3};
+
         public Armatura(string nome, int rare, int acquisto, int vendita, int numAb, int K) :base(nome, rare, acquisto, vendita)
         {
             if (numAb >= 1 && numAb <= 2)
