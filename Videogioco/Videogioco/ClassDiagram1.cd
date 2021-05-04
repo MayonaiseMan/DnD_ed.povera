@@ -16,6 +16,13 @@
   </Class>
   <Class Name="Videogioco.Armatura">
     <Position X="10" Y="7.25" Width="1.5" />
+    <NestedTypes>
+      <Enum Name="Videogioco.Armatura.genereArmatura" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Armatura.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAIAAAIgAAAAAAAAAAAAAAAAAAg=</HashCode>
       <FileName>Armatura.cs</FileName>
@@ -41,8 +48,8 @@
       <Path>
         <Point X="17.75" Y="3.389" />
         <Point X="7.22" Y="3.389" />
-        <Point X="7.22" Y="7.911" />
-        <Point X="10" Y="7.911" />
+        <Point X="7.22" Y="7.979" />
+        <Point X="10" Y="7.979" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -188,7 +195,7 @@
   <Class Name="Videogioco.GeneratoreOggetti">
     <Position X="19.5" Y="3.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAACAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAgAAAAAAACEA=</HashCode>
       <FileName>GeneratoreOggetti.cs</FileName>
     </TypeIdentifier>
   </Class>
