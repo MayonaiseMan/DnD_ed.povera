@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-E:\Users\magri\Desktop\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\
+D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\
 Videogioco
 none
 false
 DEBUG;TRACE
-E:\Users\magri\Desktop\DnD_ed.povera\Videogioco\Videogioco\App.xaml
-6588559876
+D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\App.xaml
+3-1529314364
 
-25655540421
+23470218382
 13-1505183044
-CreaPersonaggio.xaml;FinestraGioco.xaml;InventarioFinestra.xaml;MainWindow.xaml;Negozio.xaml;StatistichePersonaggio.xaml;
+FinestraGioco.xaml;MainWindow.xaml;negozio.xaml;
 
-False
+True
 

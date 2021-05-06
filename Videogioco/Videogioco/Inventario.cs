@@ -2,40 +2,59 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml;
+using System.Xml.Serialization;
+
 
 namespace Videogioco
 {
-    public class FinestraInventario
+    public class Inventario
     {
+
+        [XmlElement(ElementName = "Armi", DataType = "Arma")]
         List<Arma> _armiPossedute;
+
+        [XmlElement(ElementName = "Armature", DataType = "armature")]
         List<Armatura> _armaturePossedute;
 
-        public FinestraInventario()
+
+        public Inventario()
         {
-            throw new System.NotImplementedException();
+            _armaturePossedute = new List<Armatura>();
+            _armiPossedute = new List<Arma>();
+            
         }
 
         public Gioco Giocatore
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;            
         }
 
-        public void Lettura()
+
+
+        public void Aggiungi(Arma a)
         {
-            throw new System.NotImplementedException();
+            _armiPossedute.Add(a);
         }
 
-        public void Scrittura()
+        public void Aggiungi(Armatura a)
         {
-            throw new System.NotImplementedException();
+            _armaturePossedute.Add(a);
+        }
+         
+        public Arma GetArma(int index)
+        {
+            Arma a = _armiPossedute[index];
+            _armiPossedute.Remove(a);
+            return a;
         }
 
-        public void Apri()
+        public Armatura GetArmatura(int index)
         {
-            throw new System.NotImplementedException();
+            Armatura a = _armaturePossedute[index];
+            _armaturePossedute.Remove(a);
+            return a;
         }
     }
 }

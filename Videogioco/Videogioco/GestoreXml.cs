@@ -11,13 +11,14 @@ namespace Videogioco
 {
     public class GestoreXml
     {
-        public GestoreXml()
+        public GestoreXml(Gioco g)
         {
-            
+            gioco = g;
         }
 
-        /*
-        public Impostazione CaricaImpostazioni(string s)
+        Gioco gioco;
+
+        public Impostazione CaricaImpostazioni(string path)
         {
             try
             {
@@ -25,44 +26,184 @@ namespace Videogioco
 
                 Impostazione tmp;
 
-                using (Stream reader = new FileStream(s, FileMode.Open))
+                using (Stream reader = new FileStream(path, FileMode.Open))
                 {
                     tmp = (Impostazione)serializer.Deserialize(reader);
                 }
 
+                tmp.gioco = gioco;
                 return tmp;
             }
             catch(Exception ex)
             {
                  
                 return new Impostazione();
+            }        
+        
+        }
+
+        public void ScriviImpostazioni(string path)
+        {
+
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(Impostazione));
+
+
+
+                using (Stream writer = new FileStream(path, FileMode.Open))
+                {
+                    serializer.Serialize(writer, gioco.Impostazioni);
+                }
+
+                
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
             }
         }
 
-        public Negozio CaricaNegozio(string s)
+        public Negozio CaricaNegozio(string path)
         {
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(Negozio));
 
+                Negozio tmp;
+
+                using (Stream reader = new FileStream(path, FileMode.Open))
+                {
+                    tmp = (Negozio)serializer.Deserialize(reader);
+                }
+
+                tmp.Giocatore = gioco;
+                return tmp;
+            }
+            catch (Exception ex)
+            {
+
+                return new Negozio();
+            }
         }
 
-        public Negozio CaricaPersonaggio(string s)
-        {
+        
 
+        public void ScriviNegozio(string path)
+        {
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(Negozio));
+
+
+
+                using (Stream writer = new FileStream(path, FileMode.Open))
+                {
+                    serializer.Serialize(writer, gioco.Shop);
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
-        public void ScriviNegozio(string s)
+        private Personaggio CaricaPersonaggio(string path)
         {
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(Personaggio));
 
+                Personaggio tmp;
+
+                using (Stream reader = new FileStream(path, FileMode.Open))
+                {
+                    tmp = (Personaggio)serializer.Deserialize(reader);
+                }
+
+                
+                return tmp;
+            }
+            catch (Exception ex)
+            {
+                return null;                
+            }
         }
 
-        public void ScriviPersonaggo(string s)
+        public void ScriviPersonaggio(string path, Personaggio p)
         {
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(Personaggio));
 
+
+
+                using (Stream writer = new FileStream(path, FileMode.Open))
+                {
+                    serializer.Serialize(writer, p);
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
-        public void ScriviImpostazioni(string s)
-        {
 
-        }*/
+
+        public void ScriviInventario(string path)
+        {
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(Inventario));
+
+
+
+                using (Stream writer = new FileStream(path, FileMode.Open))
+                {
+                    serializer.Serialize(writer, gioco.Inventario;
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        public Inventario CaricaInventario(string path)
+        {
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(Inventario));
+
+                Inventario tmp;
+
+                using (Stream reader = new FileStream(path, FileMode.Open))
+                {
+                    tmp = (Inventario)serializer.Deserialize(reader);
+                }
+
+                tmp.Giocatore = gioco;
+                return tmp;
+            }
+            catch (Exception ex)
+            {
+
+                return new Inventario();
+            }
+        }
+
+        
 
     }
 }

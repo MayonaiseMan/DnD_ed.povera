@@ -13,6 +13,14 @@ namespace Videogioco
         [XmlElement(ElementName ="Soldi")]
         private int _soldi;
 
+        public bool XpBoost = false;
+
+        public GestoreXml Gestore
+        {
+            get;
+            set;
+        }
+
         public int Soldi
         {
             get
@@ -29,7 +37,7 @@ namespace Videogioco
 
         public Gioco()
         {
-           
+            Gestore = new GestoreXml(this);
         }
 
         public Negozio Shop
@@ -70,32 +78,32 @@ namespace Videogioco
 
         public void Scrittura()
         {
-            throw new System.NotImplementedException();
+             
         }
 
         public void Lettura()
         {
-            throw new System.NotImplementedException();
+             
         }
 
         public void CreaPersonaggio()
         {
-            throw new System.NotImplementedException();
+             
         }
 
         public void ApriInventario()
         {
-            throw new System.NotImplementedException();
+             
         }
 
         public void ApriNegozioo()
         {
-            throw new System.NotImplementedException();
+             
         }
 
         public void ApriStat()
         {
-            throw new System.NotImplementedException();
+             
         }
     }
 }
