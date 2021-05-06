@@ -78,6 +78,9 @@
     <Compile Include="StatistichePersonaggio.xaml.cs">
       <DependentUpon>StatistichePersonaggio.xaml</DependentUpon>
     </Compile>
+    <Compile Include="VittoriaOSconfitta.xaml.cs">
+      <DependentUpon>VittoriaOSconfitta.xaml</DependentUpon>
+    </Compile>
     <Page Include="BattagliaFinestra.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -119,6 +122,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="StatistichePersonaggio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="VittoriaOSconfitta.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -220,6 +227,15 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="12.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scontro.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SFONDO VITTORIA 1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="HAI SCONFITTA.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -169,7 +169,7 @@ namespace Videogioco
             if(Giocatore.Soldi >= a.Acquista)
             {
                 Giocatore.Soldi -= a.Acquista;
-                Giocatore.Inventario.Aggiungi(a);
+                //Giocatore.Inventario.Aggiungi(a);
                 _armi.Remove(a);
             }
         }
@@ -179,7 +179,7 @@ namespace Videogioco
             if (Giocatore.Soldi >= a.Acquista)
             {
                 Giocatore.Soldi -= a.Acquista;
-                Giocatore.Inventario.Aggiungi(a);
+                //Giocatore.Inventario.Aggiungi(a);
                 _armature.Remove(a);
             }
         }

@@ -168,7 +168,7 @@ namespace Videogioco
 
                 using (Stream writer = new FileStream(path, FileMode.Open))
                 {
-                    serializer.Serialize(writer, gioco.Inventario;
+                    serializer.Serialize(writer, gioco.Inventario);
                 }
 
 

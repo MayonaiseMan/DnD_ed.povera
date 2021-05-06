@@ -20,7 +20,7 @@ namespace Videogioco
     public partial class negozio : Window
     {
 
-        StatistichePersonaggio _mainStatistiche;
+        InventarioFinestra _mainInventario;
 
         public negozio()
         {
@@ -29,8 +29,8 @@ namespace Videogioco
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            _mainStatistiche = new StatistichePersonaggio();
-            _mainStatistiche.Show();
+            _mainInventario = new InventarioFinestra();
+            _mainInventario.Show();
             this.Close();
         }
     }

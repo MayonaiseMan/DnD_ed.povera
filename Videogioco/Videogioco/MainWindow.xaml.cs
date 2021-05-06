@@ -30,7 +30,7 @@ namespace Videogioco
         public MainWindow()
         {
             InitializeComponent();
-            gestore = new GestoreXml();
+            //gestore = new GestoreXml();
 
             //impostazioni = gestore.CaricaImpostazioni(Impostazione.CONFIG_FILE);
             //impostazioni.AggiornaAudio();

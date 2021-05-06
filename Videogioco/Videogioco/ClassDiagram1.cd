@@ -76,15 +76,6 @@
   </Class>
   <Class Name="Videogioco.Battaglia">
     <Position X="18.75" Y="8.75" Width="1.5" />
-    <AssociationLine Name="Giocatore" Type="Videogioco.Gioco" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="18.75" Y="10.231" />
-        <Point X="16.972" Y="10.231" />
-        <Point X="16.972" Y="7.915" />
-        <Point X="15.625" Y="7.915" />
-        <Point X="15.625" Y="7.545" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
       <HashCode>QAAAEAAAACAAAAAAAABAAgAAgAAAAAAAAAAAACAAQAA=</HashCode>
       <FileName>Battaglia.cs</FileName>
@@ -97,15 +88,6 @@
   </Class>
   <Class Name="Videogioco.Gioco">
     <Position X="14.5" Y="4" Width="1.5" />
-    <AssociationLine Name="Battle" Type="Videogioco.Battaglia" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
-      <Path>
-        <Point X="15.75" Y="7.545" />
-        <Point X="15.75" Y="7.824" />
-        <Point X="17.243" Y="7.824" />
-        <Point X="17.243" Y="9.905" />
-        <Point X="18.75" Y="9.905" />
-      </Path>
-    </AssociationLine>
     <TypeIdentifier>
       <HashCode>AAQAgAAAAACAAEAAQAAASQABAACAAQAEAAIBACAAQAA=</HashCode>
       <FileName>Gioco.cs</FileName>
@@ -114,7 +96,6 @@
       <Property Name="Shop" />
       <Property Name="Battle" />
       <Property Name="Impostazioni" />
-      <Property Name="Inventario" />
       <Property Name="Stat" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
@@ -134,7 +115,7 @@
       </Enum>
     </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AQEIACAAQABEAABAAAAAAAAAUAAQIgCAAAAAACAAQAA=</HashCode>
+      <HashCode>AAAAICAAQABAEgBAAAAACAAAEAAQIgCAAAAAACEAQAA=</HashCode>
       <FileName>Personaggio.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -163,7 +144,7 @@
   <Class Name="Videogioco.Inventario">
     <Position X="15" Y="8.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAgAAAAAAAAgAAEAAACAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAEAAAgAAAAAAAAwAAEAAACAA=</HashCode>
       <FileName>Inventario.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
@@ -201,7 +182,7 @@
   <Class Name="Videogioco.GestoreXml">
     <Position X="4" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAACAAAAhABAAAAAAACAAABAAgAAAI=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAhABAAAABAACAAABAAgABAI=</HashCode>
       <FileName>GestoreXml.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>

@@ -64,7 +64,7 @@ namespace Videogioco
             private set;
         }
 
-        public FinestraInventario Inventario
+        public InventarioFinestra Inventario
         {
             get;
             private set;
