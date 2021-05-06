@@ -22,6 +22,12 @@ namespace Videogioco
         [XmlElement(ElementName = "Bgm")]
         private bool _bgm;
 
+        public Gioco gioco
+        {
+            get;
+            set;
+        }
+
         public const string CONFIG_FILE = ".\\file\\config.xml";
         public const string PERCORSO_BGM = ".\\audio\\effetti.mp3";
         public const string PERCORSO_MUSICA = ".\\audio\\musica.mp3";
@@ -69,24 +75,33 @@ namespace Videogioco
 
         
 
-        public void RiproduciEffetti()
+        public async void RiproduciEffetti()
         {
-            mediaEffetti.Open(new Uri(effetti.FileName,UriKind.RelativeOrAbsolute));
-            mediaEffetti.Play();          
+            await Task.Run(() => {
+                mediaEffetti.Open(new Uri(effetti.FileName, UriKind.RelativeOrAbsolute));
+                mediaEffetti.Play();
+
+            });
+                  
         }
 
         private async void RiproduciMusica()
         {
             await Task.Run(() => {
                 mediaMusica.Open(new Uri(musica.FileName));
+                mediaMusica.MediaEnded += new EventHandler(Media_Ended);
                 mediaMusica.Play();
-                if (_bgm == true)
-                    RiproduciMusica();                
-            
+                
             });
         }
 
-        
+
+        private void Media_Ended(object sender, EventArgs e)
+        {
+            mediaMusica.Position = TimeSpan.Zero;
+            mediaMusica.Play();
+        }
+
 
 
         public void AggiornaAudio()

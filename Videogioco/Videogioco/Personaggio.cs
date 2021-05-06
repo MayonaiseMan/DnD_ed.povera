@@ -2,80 +2,188 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml;
+using System.Xml.Serialization;
+
 
 namespace Videogioco
 {
+    [XmlRoot(ElementName = "Personaggio")]
     public class Personaggio
     {
-        public Personaggio()
+        public Personaggio(string nome, razza r, int puntiVita, int A1, int A2, int Katt, int Kdif)
         {
-            throw new System.NotImplementedException();
+            if (string.IsNullOrEmpty(nome) == false)
+                _nome = nome;
+            else
+                throw new Exception("nome non valido");
+
+            Razza = r;
+            if (puntiVita > 3 && puntiVita <= 18)
+                _HP = puntiVita;
+            else
+                throw new Exception("hp non validi");
+
+            _abilita1 = A1;
+            _abilita2 = A2;
+            _Ka = Katt;
+            _Kd = Kdif;
         }
 
-        string nome;
+        public Personaggio(string nome, razza r, int puntiVita, int A1, int A2, int Katt, int Kdif, Arma arma)
+        {
+            if (string.IsNullOrEmpty(nome) == false)
+                _nome = nome;
+            else
+                throw new Exception("nome non valido");
+
+            Razza = r;
+            if (puntiVita > 3 && puntiVita <= 18)
+                _HP = puntiVita;
+            else
+                throw new Exception("hp non validi");
+
+            _abilita1 = A1;
+            _abilita2 = A2;
+            _Ka = Katt;
+            _Kd = Kdif;
+            _armaEqipaggiata = arma;
+        }
+
+        public Personaggio(string nome, razza r, int puntiVita, int A1, int A2, int Katt, int Kdif, Armatura armatura)
+        {
+            if (string.IsNullOrEmpty(nome) == false)
+                _nome = nome;
+            else
+                throw new Exception("nome non valido");
+
+            Razza = r;
+            if (puntiVita > 3 && puntiVita <= 18)
+                _HP = puntiVita;
+            else
+                throw new Exception("hp non validi");
+
+            _abilita1 = A1;
+            _abilita2 = A2;
+            _Ka = Katt;
+            _Kd = Kdif;
+            _armaturaEquipaggiata = armatura;
+        }
+
+        public Personaggio(string nome, razza r, int puntiVita, int A1, int A2, int Katt, int Kdif, Arma arma, Armatura armatura)
+        {
+            if (string.IsNullOrEmpty(nome) == false)
+                _nome = nome;
+            else
+                throw new Exception("nome non valido");
+
+            Razza = r;
+            if (puntiVita > 3 && puntiVita <= 18)
+                _HP = puntiVita;
+            else
+                throw new Exception("hp non validi");
+
+            _abilita1 = A1;
+            _abilita2 = A2;
+            _Ka = Katt;
+            _Kd = Kdif;
+            _armaEqipaggiata = arma;
+            _armaturaEquipaggiata = armatura;
+        }
+
+        [XmlElement(ElementName = "nome")]
+        string _nome;
+        
+        
         public enum razza { elfo = 55, umano = 45, nano = 30, halfling = 70};
+
+        [XmlElement(ElementName = "Razza", DataType = "razza")]
         public razza Razza
         {
             get;
             private set;
         }
-        double modificatore;
-        int HP;
+
+
+        [XmlElement(ElementName = "HP", DataType = "int")]
+        int _HP;
+
+        [XmlElement(ElementName = "arma", DataType = "Arma")]
         Arma _armaEqipaggiata;
+
+        [XmlElement(ElementName = "armatura", DataType = "Armatura")]
         Armatura _armaturaEquipaggiata;
-        int _abilita1, _abilita2;
-        int Ka, Kd;
+
+        [XmlElement(ElementName = "abilita1", DataType = "int")]
+        int _abilita1;
+
+        [XmlElement(ElementName = "abilita2", DataType = "int")]
+        int _abilita2;
+
+        [XmlElement(ElementName = "Ka", DataType = "int")]
+        int _Ka;
+
+        [XmlElement(ElementName = "Kd", DataType = "int")]
+        int _Kd;
+
+        [XmlElement(ElementName = "img")]
+        string img;
+
+
+        public void Addimg()
+        {
+
+        }
 
         public void Scrittura()
         {
-            throw new System.NotImplementedException();
+             
         }
 
         public void Lettura()
         {
-            throw new System.NotImplementedException();
+             
         }
+
 
         public Abilita AbilitaPossibili
         {
-            get => default;
-            set
-            {
-            }
+            get;
+            set;         
         }
 
         private int _exp;
 
         public void UsaAbilita()
         {
-            throw new System.NotImplementedException();
+             
         }
 
         public void Attacca()
         {
-            throw new System.NotImplementedException();
+             
         }
 
         public void Disimpegna()
         {
-            throw new System.NotImplementedException();
+             
         }
 
         public void cambiaEquipaggiamento()
         {
-            throw new System.NotImplementedException();
+             
         }
 
-        private string _immagine;
+        
 
         public void UsaArma()
         {
-            throw new System.NotImplementedException();
+             
         }
 
         public void UsaArmatura()
         {
-            throw new System.NotImplementedException();
+             
         }
     }
 }

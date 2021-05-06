@@ -20,16 +20,15 @@ namespace Videogioco
 
         public Inventario()
         {
-
+            _armaturePossedute = new List<Armatura>();
+            _armiPossedute = new List<Arma>();
+            
         }
 
         public Gioco Giocatore
         {
-            get => default;
-            set
-            {
-
-            }
+            get;
+            set;            
         }
 
 
@@ -44,14 +43,18 @@ namespace Videogioco
             _armaturePossedute.Add(a);
         }
          
-        public void GetArmi()
+        public Arma GetArma(int index)
         {
-
+            Arma a = _armiPossedute[index];
+            _armiPossedute.Remove(a);
+            return a;
         }
 
-        public void GetArmatura()
+        public Armatura GetArmatura(int index)
         {
-
+            Armatura a = _armaturePossedute[index];
+            _armaturePossedute.Remove(a);
+            return a;
         }
     }
 }
