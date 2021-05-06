@@ -57,16 +57,40 @@
     </ApplicationDefinition>
     <Compile Include="AbilitaArmature.cs" />
     <Compile Include="AbilitaArmi.cs" />
+    <Compile Include="BattagliaFinestra.xaml.cs">
+      <DependentUpon>BattagliaFinestra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="CreaPersonaggio.xaml.cs">
+      <DependentUpon>CreaPersonaggio.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FinestraGioco.xaml.cs">
       <DependentUpon>FinestraGioco.xaml</DependentUpon>
     </Compile>
     <Compile Include="GeneratoreOggetti.cs" />
     <Compile Include="GestoreXml.cs" />
-    <Compile Include="negozio.xaml.cs">
-      <DependentUpon>negozio.xaml</DependentUpon>
+    <Compile Include="InventarioFinestra.xaml.cs">
+      <DependentUpon>InventarioFinestra.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Negozio.xaml.cs">
+      <DependentUpon>Negozio.xaml</DependentUpon>
     </Compile>
     <Compile Include="Statistiche.cs" />
+    <Compile Include="StatistichePersonaggio.xaml.cs">
+      <DependentUpon>StatistichePersonaggio.xaml</DependentUpon>
+    </Compile>
+    <Page Include="BattagliaFinestra.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="CreaPersonaggio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FinestraGioco.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="InventarioFinestra.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -90,7 +114,11 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="negozio.xaml">
+    <Page Include="Negozio.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="StatistichePersonaggio.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -123,6 +151,75 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="SFONDO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="START.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Battaglia.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PLAY.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="green_button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CLEAR.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Nuovo perosnaggio.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="FRECCIA VERDE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="REDBUTTON.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="TIRA DADO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Book_and_Quil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CARICA IMMAGINE.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Statistiche pers.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="blu button.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CAMBIA ARMA.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="pers_prova.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Scegli arma e armatura.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="acquista equipaggiamento.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="PERSO.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="compra.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="CARRELLO.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="COIN.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="12.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

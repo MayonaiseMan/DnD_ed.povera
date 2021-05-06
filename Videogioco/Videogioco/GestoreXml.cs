@@ -16,7 +16,7 @@ namespace Videogioco
             
         }
 
-
+        /*
         public Impostazione CaricaImpostazioni(string s)
         {
             try
@@ -62,7 +62,7 @@ namespace Videogioco
         public void ScriviImpostazioni(string s)
         {
 
-        }
+        }*/
 
     }
 }

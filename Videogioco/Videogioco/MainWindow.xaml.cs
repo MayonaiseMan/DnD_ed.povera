@@ -35,10 +35,8 @@ namespace Videogioco
             //impostazioni = gestore.CaricaImpostazioni(Impostazione.CONFIG_FILE);
             //impostazioni.AggiornaAudio();
         }
-
-        
-
-        private void start_btn_Click(object sender, RoutedEventArgs e)
+      
+        private void btnStart_Click(object sender, RoutedEventArgs e)
         {
             _mainGioco = new FinestraGioco(this, impostazioni);
             _mainGioco.Show();

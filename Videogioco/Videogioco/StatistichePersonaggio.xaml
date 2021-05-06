@@ -1,0 +1,54 @@
+﻿<Window x:Class="Videogioco.StatistichePersonaggio"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Videogioco"
+        mc:Ignorable="d"
+        Title="StatistichePersonaggio" Height="450" Width="800">
+    <Grid>
+        <Image HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="1000" Source="Statistiche pers.png" Margin="0,0,-208,-31" OpacityMask="Black"/>
+        <Label Content="Nome" HorizontalAlignment="Left" Margin="43,11,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="Razza" HorizontalAlignment="Left" Margin="43,46,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="Classe" HorizontalAlignment="Left" Margin="43,81,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="Modificatore" HorizontalAlignment="Left" Margin="43,116,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="Punti Vita" HorizontalAlignment="Left" Margin="43,151,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="Arma" HorizontalAlignment="Left" Margin="43,186,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="Armatura" HorizontalAlignment="Left" Margin="43,221,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="Abilità 1" HorizontalAlignment="Left" Margin="43,256,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="Abilità 2" HorizontalAlignment="Left" Margin="43,291,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="K Attacco" HorizontalAlignment="Left" Margin="43,326,0,0" VerticalAlignment="Top" Width="103"/>
+        <Label Content="K Difesa" HorizontalAlignment="Left" Margin="43,361,0,0" VerticalAlignment="Top" Width="103"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="0,377,0,0" VerticalAlignment="Top" Width="43" Height="32" Click="Button_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="FRECCIA VERDE.png"/>
+            </Button.Background>
+        </Button>
+        <Label Content="" HorizontalAlignment="Left" Margin="182,81,0,0" VerticalAlignment="Top" Width="103" Background="White"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="182,116,0,0" VerticalAlignment="Top" Width="103" Background="White"/>
+        <Image HorizontalAlignment="Left" Height="29" Margin="10,10,0,0" VerticalAlignment="Top" Width="35" Source="Book_and_Quil.png"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="182,10,0,0" VerticalAlignment="Top" Width="103" Background="White"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="182,46,0,0" VerticalAlignment="Top" Width="103" Background="White"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="182,151,0,0" VerticalAlignment="Top" Width="103" Background="White"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="182,256,0,0" VerticalAlignment="Top" Width="103" Background="White"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="182,291,0,0" VerticalAlignment="Top" Width="103" Background="White"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="182,326,0,0" VerticalAlignment="Top" Width="103" Background="White"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="182,361,0,0" VerticalAlignment="Top" Width="103" Background="White"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="147,166,0,198" Width="172" Click="Button_Click_1">
+            <Button.Background>
+                <ImageBrush ImageSource="blu button.png"/>
+            </Button.Background>
+        </Button>
+        <Button Content="" HorizontalAlignment="Left" Margin="147,201,0,163" Width="172" Click="Button_Click_2">
+            <Button.Background>
+                <ImageBrush ImageSource="blu button.png"/>
+            </Button.Background>
+        </Button>
+        <Image HorizontalAlignment="Left" Height="20" Margin="182,186,0,0" VerticalAlignment="Top" Width="100" Source="CAMBIA ARMA.png"/>
+        <Image HorizontalAlignment="Left" Height="20" Margin="182,222,0,0" VerticalAlignment="Top" Width="100" Source="CAMBIA ARMA.png"/>
+        <Image HorizontalAlignment="Left" Height="363" Margin="578,104,0,-48" VerticalAlignment="Top" Width="192" Source="pers_prova.png"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="667,10,0,0" VerticalAlignment="Top" Width="103" Background="White"/>
+        <Label Content="Conto:" HorizontalAlignment="Left" Margin="622,10,0,0" VerticalAlignment="Top" Width="45" Background="White"/>
+
+    </Grid>
+</Window>

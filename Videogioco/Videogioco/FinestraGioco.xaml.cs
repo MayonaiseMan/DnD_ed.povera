@@ -21,6 +21,8 @@ namespace Videogioco
     {
         Gioco gioco;
         MainWindow start;
+        CreaPersonaggio _mainPersonaggio;
+        StatistichePersonaggio _mainStatistiche;
 
         public FinestraGioco(MainWindow main, Impostazione i)
         {
@@ -29,6 +31,18 @@ namespace Videogioco
             start = main;
         }
 
+        private void btnCreaPersonaggio_Click(object sender, RoutedEventArgs e)
+        {
+            _mainPersonaggio = new CreaPersonaggio();
+            _mainPersonaggio.Show();
+            this.Close();
+        }
 
+        private void btnStatistiche_Click(object sender, RoutedEventArgs e)
+        {
+            _mainStatistiche = new StatistichePersonaggio();
+            _mainStatistiche.Show();
+            this.Close();
+        }
     }
 }

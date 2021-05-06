@@ -5,12 +5,12 @@ using System.Text;
 
 namespace Videogioco
 {
-    public class Inventario
+    public class FinestraInventario
     {
         List<Arma> _armiPossedute;
         List<Armatura> _armaturePossedute;
 
-        public Inventario()
+        public FinestraInventario()
         {
             throw new System.NotImplementedException();
         }

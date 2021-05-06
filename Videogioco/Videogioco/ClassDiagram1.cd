@@ -72,7 +72,7 @@
         <Point X="16.972" Y="9.731" />
         <Point X="16.972" Y="7.915" />
         <Point X="15.625" Y="7.915" />
-        <Point X="15.625" Y="7.161" />
+        <Point X="15.625" Y="7.353" />
       </Path>
     </AssociationLine>
     <TypeIdentifier>
@@ -89,7 +89,7 @@
     <Position X="14.5" Y="4" Width="1.5" />
     <AssociationLine Name="Battle" Type="Videogioco.Battaglia" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
       <Path>
-        <Point X="15.75" Y="7.161" />
+        <Point X="15.75" Y="7.353" />
         <Point X="15.75" Y="7.824" />
         <Point X="17.243" Y="7.824" />
         <Point X="17.243" Y="9.405" />
@@ -104,7 +104,6 @@
       <Property Name="Shop" />
       <Property Name="Battle" />
       <Property Name="Impostazioni" />
-      <Property Name="Inventario" />
       <Property Name="Stat" />
     </ShowAsAssociation>
     <ShowAsCollectionAssociation>
@@ -147,20 +146,6 @@
       <FileName>Impostazione.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="Videogioco.Inventario">
-    <Position X="15" Y="8.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AABAAAAAAAAAAAAAAAAAEAAAgAAAAAAAAgAAACAAQAA=</HashCode>
-      <FileName>Inventario.cs</FileName>
-    </TypeIdentifier>
-    <ShowAsAssociation>
-      <Property Name="Giocatore" />
-    </ShowAsAssociation>
-    <ShowAsCollectionAssociation>
-      <Field Name="_armiPossedute" />
-      <Field Name="_armaturePossedute" />
-    </ShowAsCollectionAssociation>
-  </Class>
   <Class Name="Videogioco.Statistiche">
     <Position X="17.75" Y="5.75" Width="1.5" />
     <TypeIdentifier>
@@ -172,14 +157,14 @@
     </ShowAsAssociation>
   </Class>
   <Class Name="Videogioco.AbilitaArmi">
-    <Position X="9" Y="10" Width="1.5" />
+    <Position X="9" Y="11" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAEAQAAAAAAAQA=</HashCode>
       <FileName>AbilitaArmi.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Videogioco.AbilitaArmature">
-    <Position X="9" Y="12" Width="1.5" />
+    <Position X="9" Y="13.75" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAgAAAAAAAAAAAAAABAAAAIAAAAAAAAAQAAAAAAAAA=</HashCode>
       <FileName>AbilitaArmature.cs</FileName>
@@ -188,7 +173,7 @@
   <Class Name="Videogioco.GestoreXml">
     <Position X="5.75" Y="9.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAACAAAAhABAAAAAAACAAAAAAgAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>GestoreXml.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -198,6 +183,20 @@
       <HashCode>AAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAgAAAAAAACEA=</HashCode>
       <FileName>GeneratoreOggetti.cs</FileName>
     </TypeIdentifier>
+  </Class>
+  <Class Name="Videogioco.FinestraInventario">
+    <Position X="15" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAAAAAAAAAAAAAAAAEAAAgAAAAAAAAgAAACAAQAA=</HashCode>
+      <FileName>Inventario.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Giocatore" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="_armaturePossedute" />
+      <Field Name="_armiPossedute" />
+    </ShowAsCollectionAssociation>
   </Class>
   <Font Name="Segoe UI" Size="9" />
 </ClassDiagram>

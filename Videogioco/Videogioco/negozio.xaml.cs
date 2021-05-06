@@ -19,9 +19,19 @@ namespace Videogioco
     /// </summary>
     public partial class negozio : Window
     {
+
+        StatistichePersonaggio _mainStatistiche;
+
         public negozio()
         {
             InitializeComponent();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            _mainStatistiche = new StatistichePersonaggio();
+            _mainStatistiche.Show();
+            this.Close();
         }
     }
 }

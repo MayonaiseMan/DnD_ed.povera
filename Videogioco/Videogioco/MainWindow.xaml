@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Videogioco"
         mc:Ignorable="d"
-        Title="Start" Height="450" Width="800" WindowStyle="None">
+        Title="Start" Height="450" Width="800">
     <Grid ScrollViewer.HorizontalScrollBarVisibility="Auto">
-        <Button x:Name="start_btn" Content="Button" HorizontalAlignment="Left" Margin="333,321,0,0" VerticalAlignment="Top" Width="125" Click="start_btn_Click" Height="37"/>
+        <Image HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="800" Source="SFONDO.png" Margin="0,0,-8,-31"/>
+        <Button x:Name="btnStart" Content="" HorizontalAlignment="Left" Margin="325,310,0,0" VerticalAlignment="Top" Width="127" Height="41" Click="btnStart_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="START.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>
