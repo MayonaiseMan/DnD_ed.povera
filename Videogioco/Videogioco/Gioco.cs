@@ -13,6 +13,8 @@ namespace Videogioco
         [XmlElement(ElementName ="Soldi")]
         private int _soldi;
 
+        public bool XpBoost = false;
+
         public int Soldi
         {
             get

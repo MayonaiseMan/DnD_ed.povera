@@ -2,15 +2,28 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml;
+using System.Xml.Serialization;
+
 
 namespace Videogioco
 {
     public abstract class Equipaggiamento
     {
-        private string _nome;
+
+        [XmlElement(ElementName = "nome")]
+        public string _nome;
+        
         public enum rare {comune, raro, speciale, divino, singolarita };
-        rare _rarita;
-        int _buy, _sell;
+
+        [XmlElement(ElementName = "rarita", DataType = "rare")]
+        public rare _rarita;
+
+        [XmlElement(ElementName = "acquisto", DataType = "int")]
+        public int _buy;
+
+        [XmlElement(ElementName = "vendita", DataType = "int")]
+        public int _sell;
 
         public Equipaggiamento(string n, int r, int b, int s)
         {
@@ -26,14 +39,42 @@ namespace Videogioco
             }
         }
 
-        public void Scrittura()
+        public int Acquista
         {
-            throw new System.NotImplementedException();
+            get
+            {
+                return _buy;
+            }
+            
         }
 
-        public void Lettura()
+        public int Vendita
         {
-            throw new System.NotImplementedException();
+            get
+            {
+                return _sell;
+            }
+           
+
         }
+
+        public rare Rarita
+        {
+            get
+            {
+                return _rarita;
+            }
+           
+        }
+
+        public string Nome
+        {
+            get
+            {
+                return _nome;
+            }
+           
+        }
+       
     }
 }

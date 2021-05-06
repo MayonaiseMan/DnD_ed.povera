@@ -2,17 +2,25 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Xml;
+using System.Xml.Serialization;
+
 
 namespace Videogioco
 {
     public class Inventario
     {
+
+        [XmlElement(ElementName = "Armi", DataType = "Arma")]
         List<Arma> _armiPossedute;
+
+        [XmlElement(ElementName = "Armature", DataType = "armature")]
         List<Armatura> _armaturePossedute;
+
 
         public Inventario()
         {
-            throw new System.NotImplementedException();
+
         }
 
         public Gioco Giocatore
@@ -20,22 +28,30 @@ namespace Videogioco
             get => default;
             set
             {
+
             }
         }
 
-        public void Lettura()
+
+
+        public void Aggiungi(Arma a)
         {
-            throw new System.NotImplementedException();
+            _armiPossedute.Add(a);
         }
 
-        public void Scrittura()
+        public void Aggiungi(Armatura a)
         {
-            throw new System.NotImplementedException();
+            _armaturePossedute.Add(a);
+        }
+         
+        public void GetArmi()
+        {
+
         }
 
-        public void Apri()
+        public void GetArmatura()
         {
-            throw new System.NotImplementedException();
+
         }
     }
 }

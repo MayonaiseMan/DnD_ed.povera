@@ -63,7 +63,7 @@ namespace Videogioco
 
         }
 
-        public Armatura GetArmatura(string n, int numA, Armatura.genereArmatura g)
+        public Armatura GeneraArmatura(string n, int numA, Armatura.genereArmatura g)
         {
             try
             {

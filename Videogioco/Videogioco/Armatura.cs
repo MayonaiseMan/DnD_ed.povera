@@ -12,11 +12,14 @@ namespace Videogioco
     {
 
 
-        [XmlElement(ElementName = "Kd")]
+        [XmlElement(ElementName = "Kd", DataType = "int")]
         private int _valoreDifesa;
 
-        [XmlElement(ElementName = "abilitaArmatura")]
+        [XmlElement(ElementName = "abilitaArmatura", DataType = "int")]
         private int _numAbilita;
+
+        [XmlElement(ElementName = "genere", DataType = "genereArmatura")]
+        public genereArmatura Genere { get; private set; }
 
         public enum genereArmatura {leggera = 1, media = 2, pesante = 3};
 

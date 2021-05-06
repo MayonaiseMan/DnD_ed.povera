@@ -10,11 +10,14 @@ namespace Videogioco
     [XmlRoot(ElementName ="Arma")]
     public class Arma : Equipaggiamento
     {
-        [XmlElement(ElementName ="Ka")]
+        [XmlElement(ElementName ="Ka", DataType = "int")]
         private int _valoreAttacco;
 
-        [XmlElement(ElementName = "abilitaArma")]
+        [XmlElement(ElementName = "abilitaArma", DataType = "int")]
         private int _numAbilita;
+
+        [XmlElement(ElementName = "genere", DataType = "genereArma")]
+        public genereArma Genere { get; private set; }
 
         public enum genereArma {Pugnale = 1, SpadaLunga = 2, Maglio = 3, AsciaBipenne = 4, Randello = 5, Balestra = 6, Scimitarra = 7};
 
@@ -42,6 +45,7 @@ namespace Videogioco
         {
 
         }
+
 
         
         public AbilitaArmi AbilitaArma

@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Videogioco"
         mc:Ignorable="d"
-        Title="Start" Height="450" Width="800" WindowStyle="None">
+        Title="Start" Height="450" Width="800">
     <Grid ScrollViewer.HorizontalScrollBarVisibility="Auto">
         <Button x:Name="start_btn" Content="Button" HorizontalAlignment="Left" Margin="333,321,0,0" VerticalAlignment="Top" Width="125" Click="start_btn_Click" Height="37"/>
     </Grid>

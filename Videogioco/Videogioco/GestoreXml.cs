@@ -11,13 +11,14 @@ namespace Videogioco
 {
     public class GestoreXml
     {
-        public GestoreXml()
+        public GestoreXml(Gioco g)
         {
-            
+            gioco = g;
         }
 
+        Gioco gioco;
 
-        public Impostazione CaricaImpostazioni(string s)
+        public Impostazione CaricaImpostazioni(string path)
         {
             try
             {
@@ -25,7 +26,7 @@ namespace Videogioco
 
                 Impostazione tmp;
 
-                using (Stream reader = new FileStream(s, FileMode.Open))
+                using (Stream reader = new FileStream(path, FileMode.Open))
                 {
                     tmp = (Impostazione)serializer.Deserialize(reader);
                 }
@@ -36,12 +37,53 @@ namespace Videogioco
             {
                  
                 return new Impostazione();
+            }        
+        
+        }
+
+        public void ScriviImpostazioni(string path)
+        {
+
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(Impostazione));
+
+
+
+                using (Stream writer = new FileStream(path, FileMode.Open))
+                {
+                    serializer.Serialize(writer, gioco.Impostazioni);
+                }
+
+                
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
             }
         }
 
-        public Negozio CaricaNegozio(string s)
+        public Negozio CaricaNegozio(string path)
         {
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(Negozio));
 
+                Negozio tmp;
+
+                using (Stream reader = new FileStream(path, FileMode.Open))
+                {
+                    tmp = (Negozio)serializer.Deserialize(reader);
+                }
+
+                return tmp;
+            }
+            catch (Exception ex)
+            {
+
+                return new Negozio();
+            }
         }
 
         public Negozio CaricaPersonaggio(string s)
@@ -49,9 +91,26 @@ namespace Videogioco
 
         }
 
-        public void ScriviNegozio(string s)
+        public void ScriviNegozio(string path)
         {
+            try
+            {
+                XmlSerializer serializer = new XmlSerializer(typeof(Negozio));
 
+
+
+                using (Stream writer = new FileStream(path, FileMode.Open))
+                {
+                    serializer.Serialize(writer, gioco.Shop);
+                }
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+            }
         }
 
         public void ScriviPersonaggo(string s)
@@ -59,10 +118,7 @@ namespace Videogioco
 
         }
 
-        public void ScriviImpostazioni(string s)
-        {
-
-        }
+        
 
     }
 }
