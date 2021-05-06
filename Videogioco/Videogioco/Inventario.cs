@@ -11,10 +11,10 @@ namespace Videogioco
     public class Inventario
     {
 
-        [XmlElement(ElementName = "Armi", DataType = "Arma")]
+        [XmlElement(ElementName = "Armi")]
         List<Arma> _armiPossedute;
 
-        [XmlElement(ElementName = "Armature", DataType = "armature")]
+        [XmlElement(ElementName = "Armature")]
         List<Armatura> _armaturePossedute;
 
 

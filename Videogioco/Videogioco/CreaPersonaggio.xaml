@@ -24,39 +24,44 @@
                 <ImageBrush ImageSource="FRECCIA VERDE.png"/>
             </Button.Background>
         </Button>
-        <TextBox HorizontalAlignment="Left" Height="26" Margin="182,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103"/>
-        <Label Content="" HorizontalAlignment="Left" Margin="182,81,0,0" VerticalAlignment="Top" Width="103" Background="White"/>
-        <Label Content="" HorizontalAlignment="Left" Margin="182,116,0,0" VerticalAlignment="Top" Width="103" Background="White"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="146,142,0,222" Width="172">
+        <TextBox x:Name="nome_txt" HorizontalAlignment="Left" Height="26" Margin="182,11,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="103"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="182,81,0,0" VerticalAlignment="Top" Width="103" Background="White" IsEnabled="False"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="182,116,0,0" VerticalAlignment="Top" Width="103" Background="White" IsEnabled="False"/>
+        <Button x:Name="dado_btn_hp" Content="" HorizontalAlignment="Left" Margin="146,142,0,222" Width="172" Click="dado_btn_hp_Click" >
             <Button.Background>
                 <ImageBrush ImageSource="REDBUTTON.png"/>
             </Button.Background>
         </Button>
         <Image HorizontalAlignment="Left" Height="22" Margin="185,160,0,0" VerticalAlignment="Top" Width="91" Source="TIRA DADO.png"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="146,312,0,52" Width="172">
+        <Button x:Name="dado_ka_btn" Content="" HorizontalAlignment="Left" Margin="146,312,0,52" Width="172" Click="dado_ka_btn_Click" >
             <Button.Background>
                 <ImageBrush ImageSource="REDBUTTON.png"/>
             </Button.Background>
         </Button>
         <Image HorizontalAlignment="Left" Height="22" Margin="185,330,0,0" VerticalAlignment="Top" Width="91" Source="TIRA DADO.png"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="146,354,0,10" Width="172">
+        <Button x:Name="dado_kd_btn" Content="" HorizontalAlignment="Left" Margin="146,354,0,10" Width="172" Click="dado_kd_btn_Click" >
             <Button.Background>
                 <ImageBrush ImageSource="REDBUTTON.png"/>
             </Button.Background>
         </Button>
         <Image HorizontalAlignment="Left" Height="22" Margin="185,372,0,0" VerticalAlignment="Top" Width="91" Source="TIRA DADO.png"/>
-        <Button Content="" HorizontalAlignment="Left" Margin="693,11,0,0" VerticalAlignment="Top" Width="79" Height="61">
+        <Button x:Name="add_img_btn" Content="" HorizontalAlignment="Left" Margin="693,11,0,0" VerticalAlignment="Top" Width="79" Height="61" Click="add_img_btn_Click">
             <Button.Background>
                 <ImageBrush ImageSource="Book_and_Quil.png"/>
             </Button.Background>
         </Button>
         <Image HorizontalAlignment="Left" Height="61" Margin="569,11,0,0" VerticalAlignment="Top" Width="119" Source="CARICA IMMAGINE.png"/>
-        <ComboBox HorizontalAlignment="Left" Margin="182,46,0,0" VerticalAlignment="Top" Width="103" Height="26"/>
-        <ComboBox HorizontalAlignment="Left" Margin="182,186,0,0" VerticalAlignment="Top" Width="103" Height="26"/>
-        <ComboBox HorizontalAlignment="Left" Margin="182,221,0,0" VerticalAlignment="Top" Width="103" Height="26"/>
-        <ComboBox HorizontalAlignment="Left" Margin="182,256,0,0" VerticalAlignment="Top" Width="103" Height="26"/>
-        <ComboBox HorizontalAlignment="Left" Margin="182,291,0,0" VerticalAlignment="Top" Width="103" Height="26"/>
+        <ComboBox x:Name="razza_combo" HorizontalAlignment="Left" Margin="182,46,0,0" VerticalAlignment="Top" Width="103" Height="26"/>
+        <ComboBox x:Name="arma_combo" HorizontalAlignment="Left" Margin="182,186,0,0" VerticalAlignment="Top" Width="103" Height="26"/>
+        <ComboBox x:Name="armatura_combo" HorizontalAlignment="Left" Margin="182,221,0,0" VerticalAlignment="Top" Width="103" Height="26"/>
+        <ComboBox x:Name="ab1_combo" HorizontalAlignment="Left" Margin="182,256,0,0" VerticalAlignment="Top" Width="103" Height="26"/>
+        <ComboBox x:Name="abilita_combo" HorizontalAlignment="Left" Margin="182,291,0,0" VerticalAlignment="Top" Width="103" Height="26"/>
         <Image HorizontalAlignment="Left" Height="29" Margin="10,10,0,0" VerticalAlignment="Top" Width="35" Source="Book_and_Quil.png"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="553,247,0,0" VerticalAlignment="Top" Width="100"/>
+        <Button x:Name="ok_btn" Content="" HorizontalAlignment="Left" Margin="659,372,0,0" VerticalAlignment="Top" Width="133" Height="47" Click="ok_btn_Click">
+            <Button.Background>
+                <ImageBrush ImageSource="green_button.png"/>
+            </Button.Background>
+        </Button>
     </Grid>
 </Window>

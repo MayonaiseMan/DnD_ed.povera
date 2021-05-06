@@ -16,6 +16,11 @@ namespace Videogioco
             gioco = g;
         }
 
+        public GestoreXml()
+        {
+
+        }
+
         Gioco gioco;
 
         public Impostazione CaricaImpostazioni(string path)
@@ -168,7 +173,7 @@ namespace Videogioco
 
                 using (Stream writer = new FileStream(path, FileMode.Open))
                 {
-                    serializer.Serialize(writer, gioco.Inventario;
+                    serializer.Serialize(writer, gioco.Inventario);
                 }
 
 

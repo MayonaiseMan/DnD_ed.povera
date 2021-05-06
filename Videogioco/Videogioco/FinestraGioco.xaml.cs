@@ -33,7 +33,7 @@ namespace Videogioco
 
         private void btnCreaPersonaggio_Click(object sender, RoutedEventArgs e)
         {
-            _mainPersonaggio = new CreaPersonaggio();
+            _mainPersonaggio = new CreaPersonaggio(this);
             _mainPersonaggio.Show();
             this.Close();
         }

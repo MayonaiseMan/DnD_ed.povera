@@ -38,7 +38,11 @@ namespace Videogioco
         public Gioco()
         {
             Gestore = new GestoreXml(this);
+            Shop = Gestore.CaricaNegozio(".\\data\\xml\\negozio.xml");
+            Battle = new Battaglia();
+            
         }
+
 
         public Negozio Shop
         {
@@ -64,7 +68,7 @@ namespace Videogioco
             private set;
         }
 
-        public FinestraInventario Inventario
+        public Inventario Inventario
         {
             get;
             private set;

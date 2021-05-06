@@ -72,3 +72,13 @@ E:\Users\magri\Desktop\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\Statistiche
 E:\Users\magri\Desktop\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\StatistichePersonaggio.baml
 E:\Users\magri\Desktop\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\InventarioFinestra.g.cs
 E:\Users\magri\Desktop\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\InventarioFinestra.baml
+D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\BattagliaFinestra.g.cs
+D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\CreaPersonaggio.g.cs
+D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\InventarioFinestra.g.cs
+D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\Negozio.g.cs
+D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\StatistichePersonaggio.g.cs
+D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\negozio.baml
+D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\BattagliaFinestra.baml
+D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\CreaPersonaggio.baml
+D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\InventarioFinestra.baml
+D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\StatistichePersonaggio.baml

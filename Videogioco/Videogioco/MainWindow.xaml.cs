@@ -26,6 +26,8 @@ namespace Videogioco
         Impostazione impostazioni;
         FinestraGioco _mainGioco;
         GestoreXml gestore;
+            
+
 
         public MainWindow()
         {

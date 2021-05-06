@@ -12,7 +12,7 @@ namespace Videogioco
 
         public Battaglia()
         {
-            throw new System.NotImplementedException();
+           
         }
 
         public Gioco Giocatore
@@ -25,27 +25,22 @@ namespace Videogioco
 
         public void RoundGo()
         {
-            throw new System.NotImplementedException();
         }
 
         public void Start()
         {
-            throw new System.NotImplementedException();
         }
 
         public void Scrittura()
         {
-            throw new System.NotImplementedException();
         }
 
         public void Lettura()
         {
-            throw new System.NotImplementedException();
         }
 
         public void MostraRegistro()
         {
-            throw new System.NotImplementedException();
         }
     }
 }

@@ -16,10 +16,10 @@ namespace Videogioco
     {        
 
 
-        [XmlElement(ElementName = "Armi", DataType = "Arma")]
+        [XmlElement(ElementName = "Armi")]
         List<Arma> _armi;
 
-        [XmlElement(ElementName = "Armature", DataType = "armature")]
+        [XmlElement(ElementName = "Armature")]
         List<Armatura> _armature;
 
         [XmlElement(ElementName = "ultimoAggiornamento")]
@@ -30,7 +30,7 @@ namespace Videogioco
             ultimoAggiornamento = "";
             _armature = new List<Armatura>();
             _armi = new List<Arma>();
-            Riempi();
+            //Riempi();
         }
 
         public Gioco Giocatore
@@ -48,7 +48,7 @@ namespace Videogioco
             if (giorno != ultimoAggiornamento)
             {
                 SvuotaNegozio();
-                Riempi();
+                //Riempi();
                 ultimoAggiornamento = oggi;
                 return false;
             }

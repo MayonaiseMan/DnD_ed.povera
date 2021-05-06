@@ -10,11 +10,11 @@ none
 false
 DEBUG;TRACE
 D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\App.xaml
-3-1529314364
+72106472169
 
-23470218382
+26-1522824815
 13-1505183044
-FinestraGioco.xaml;MainWindow.xaml;negozio.xaml;
+BattagliaFinestra.xaml;CreaPersonaggio.xaml;FinestraGioco.xaml;InventarioFinestra.xaml;MainWindow.xaml;Negozio.xaml;StatistichePersonaggio.xaml;
 
-True
+False
 
