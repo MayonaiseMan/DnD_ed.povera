@@ -8,8 +8,8 @@
         Title="negozio" Height="450" Width="800">
     <Grid>
         <Image HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="792" Source="PERSO.jpg" Margin="0,0,0,-31"/>
-        <ListBox HorizontalAlignment="Left" Height="319" Margin="27,64,0,0" VerticalAlignment="Top" Width="186"/>
-        <ListBox HorizontalAlignment="Left" Height="319" Margin="283,64,0,0" VerticalAlignment="Top" Width="186"/>
+        <ListBox HorizontalAlignment="Left" Height="313" Margin="27,64,0,0" VerticalAlignment="Top" Width="186"/>
+        <ListBox HorizontalAlignment="Left" Height="313" Margin="283,64,0,0" VerticalAlignment="Top" Width="186"/>
         <Label x:Name="lblTitolo" Content="ARMI" HorizontalAlignment="Left" Margin="76,10,0,0" VerticalAlignment="Top" Width="83" Height="61" FontFamily="SimSun" FontSize="36"/>
         <Label x:Name="lblTitolo_Copy" Content="ARMATURE" HorizontalAlignment="Left" Margin="299,10,0,0" VerticalAlignment="Top" Width="156" Height="61" FontFamily="SimSun" FontSize="36"/>
         <Button Content="" HorizontalAlignment="Left" Margin="530,297,0,0" VerticalAlignment="Top" Width="197" Height="115" Click="Button_Click">

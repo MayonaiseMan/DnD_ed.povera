@@ -10,37 +10,27 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
-using System.IO;
-using System.Xml;
-using System.Xml.Serialization;
 
 namespace Videogioco
 {
     /// <summary>
-    /// Logica di interazione per MainWindow.xaml
+    /// Logica di interazione per VittoriaOSconfitta.xaml
     /// </summary>
-    public partial class MainWindow : Window
+    public partial class VittoriaOSconfitta : Window
     {
         Impostazione impostazioni;
         FinestraGioco _mainGioco;
-        GestoreXml gestore;
-            
+        MainWindow main;
 
-
-        public MainWindow()
+        public VittoriaOSconfitta()
         {
             InitializeComponent();
-            //gestore = new GestoreXml();
-
-            //impostazioni = gestore.CaricaImpostazioni(Impostazione.CONFIG_FILE);
-            //impostazioni.AggiornaAudio();
         }
-      
-        private void btnStart_Click(object sender, RoutedEventArgs e)
+
+        private void Button_Click(object sender, RoutedEventArgs e)
         {
-            _mainGioco = new FinestraGioco(this, impostazioni);
+            _mainGioco = new FinestraGioco(main, impostazioni);
             _mainGioco.Show();
             this.Close();
         }

@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="BattagliaFinestra" Height="450" Width="800">
     <Grid>
-        <Image HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="792"/>
+        <Image HorizontalAlignment="Left" Height="419" VerticalAlignment="Top" Width="1000" Source="Scontro.png" Margin="-48,0,-160,0"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="334,257,0,0" VerticalAlignment="Top" Width="100"/>
 
     </Grid>
 </Window>

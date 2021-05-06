@@ -8,8 +8,8 @@
         Title="InventarioFinestra" Height="450" Width="800">
     <Grid>
         <Image HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="792" Source="12.jpg" Margin="0,0,0,-31" OpacityMask="Black"/>
-        <ListBox HorizontalAlignment="Left" Height="319" Margin="27,64,0,0" VerticalAlignment="Top" Width="186" OpacityMask="Black"/>
-        <ListBox HorizontalAlignment="Left" Height="319" Margin="283,64,0,0" VerticalAlignment="Top" Width="186" OpacityMask="Black"/>
+        <ListBox HorizontalAlignment="Left" Height="313" Margin="27,64,0,0" VerticalAlignment="Top" Width="186" OpacityMask="Black"/>
+        <ListBox HorizontalAlignment="Left" Height="313" Margin="283,64,0,0" VerticalAlignment="Top" Width="186" OpacityMask="Black"/>
         <Label x:Name="lblTitolo" Content="ARMI" HorizontalAlignment="Left" Margin="76,10,0,0" VerticalAlignment="Top" Width="83" Height="61" FontFamily="SimSun" FontSize="36" OpacityMask="Black"/>
         <Label x:Name="lblTitolo_Copy" Content="ARMATURE" HorizontalAlignment="Left" Margin="299,10,0,0" VerticalAlignment="Top" Width="156" Height="61" FontFamily="SimSun" FontSize="36" OpacityMask="Black"/>
         <Button x:Name="btnAcquista" Content="" HorizontalAlignment="Left" Margin="523,254,-11,0" VerticalAlignment="Top" Width="281" Height="165" OpacityMask="Black" Click="btnAcquista_Click">

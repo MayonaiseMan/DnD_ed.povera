@@ -23,6 +23,7 @@ namespace Videogioco
         MainWindow start;
         CreaPersonaggio _mainPersonaggio;
         StatistichePersonaggio _mainStatistiche;
+        BattagliaFinestra _mainScontro;
 
         public FinestraGioco(MainWindow main, Impostazione i)
         {
@@ -42,6 +43,13 @@ namespace Videogioco
         {
             _mainStatistiche = new StatistichePersonaggio();
             _mainStatistiche.Show();
+            this.Close();
+        }
+
+        private void btnPaly_Click(object sender, RoutedEventArgs e)
+        {
+            _mainScontro = new BattagliaFinestra();
+            _mainScontro.Show();
             this.Close();
         }
     }
