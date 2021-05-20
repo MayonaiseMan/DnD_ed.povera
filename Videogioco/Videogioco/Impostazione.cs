@@ -28,9 +28,9 @@ namespace Videogioco
             set;
         }
 
-        public const string CONFIG_FILE = ".\\file\\config.xml";
-        public const string PERCORSO_BGM = ".\\audio\\effetti.mp3";
-        public const string PERCORSO_MUSICA = ".\\audio\\musica.mp3";
+        public const string CONFIG_FILE = ".\\data\\xml\\config.xml";
+        public const string PERCORSO_BGM = ".\\data\\audio\\effetti.mp3";
+        public const string PERCORSO_MUSICA = ".\\data\\audio\\musica.mp3";
 
 
 
@@ -45,12 +45,12 @@ namespace Videogioco
             _effetti = true;
 
 
-            //effetti = new OpenFileDialog();
-            //mediaEffetti = new MediaPlayer();
+            effetti = new OpenFileDialog();
+            mediaEffetti = new MediaPlayer();
 
-            //musica = new OpenFileDialog();
-            //mediaMusica = new MediaPlayer();
-
+            musica = new OpenFileDialog();
+            mediaMusica = new MediaPlayer();
+            
         }
 
 

@@ -82,3 +82,5 @@ D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\BattagliaF
 D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\CreaPersonaggio.baml
 D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\InventarioFinestra.baml
 D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\StatistichePersonaggio.baml
+D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\VittoriaOSconfitta.g.cs
+D:\Scuola\visual studio\DnD_ed.povera\Videogioco\Videogioco\obj\Debug\VittoriaOSconfitta.baml

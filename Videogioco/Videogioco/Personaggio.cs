@@ -9,13 +9,24 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
-using System.Windows.Shapes;
+using System.Windows;
+using System.ComponentModel;
+using System.Xml.Linq;
+using System.IO;
+using System.Drawing;
+using System.Windows.Interop;
+
 
 namespace Videogioco
 {
     [XmlRoot(ElementName = "Personaggio")]
     public class Personaggio
     {
+
+        public Personaggio()
+        { 
+        }
+
         public Personaggio(string nome, razza r, int puntiVita, int A1, int A2, int Katt, int Kdif)
         {
             if (string.IsNullOrEmpty(nome) == false)
@@ -220,16 +231,58 @@ namespace Videogioco
         [XmlElement(ElementName = "Kd", DataType = "int")]
         int _Kd;
 
-        [XmlElement(ElementName = "img")]
-        string img;
-
+       
         BitmapImage immagine;
 
+        [XmlElement(ElementName = "img", IsNullable =  true)]
+        XElement stringaImg = null;
 
         public void AddImg(BitmapImage img)
         {
             immagine = img;
+            GenereStringaImmagine();
         }
+
+        public void GenereStringaImmagine()
+        {
+            BitmapImage bmp =  immagine;
+            TypeConverter converter = TypeDescriptor.GetConverter(typeof(BitmapImage));
+            XElement img = new XElement("image",
+                Convert.ToBase64String(
+                    (byte[])converter.ConvertTo(bmp, typeof(byte[]))));
+            stringaImg = img;
+
+        }
+
+
+        public void CaricaImmagine()
+        {
+            string val = stringaImg.Value;
+            byte[] bytes = Convert.FromBase64String(val);
+            MemoryStream mem = new MemoryStream(bytes);
+            Bitmap bmp2 = new Bitmap(mem);
+
+
+            IntPtr hBitmap = bmp2.GetHbitmap();
+            BitmapImage retval;
+
+            try
+            {
+                retval = (BitmapImage)Imaging.CreateBitmapSourceFromHBitmap(
+                             hBitmap,
+                             IntPtr.Zero,
+                             Int32Rect.Empty,
+                             BitmapSizeOptions.FromEmptyOptions());
+            }
+            finally
+            {
+                
+            }
+
+            immagine = retval;
+        }
+
+      
 
         public void Scrittura()
         {
