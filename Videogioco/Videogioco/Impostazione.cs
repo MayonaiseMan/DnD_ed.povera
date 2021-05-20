@@ -39,7 +39,7 @@ namespace Videogioco
         OpenFileDialog musica;
         MediaPlayer mediaMusica;
 
-        public Impostazione()
+        public Impostazione(bool a)
         {
             _bgm = true;
             _effetti = true;
@@ -51,6 +51,11 @@ namespace Videogioco
             musica = new OpenFileDialog();
             mediaMusica = new MediaPlayer();
             
+        }
+
+        public Impostazione()
+        {
+
         }
 
 

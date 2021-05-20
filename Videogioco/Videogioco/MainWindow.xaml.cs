@@ -32,10 +32,10 @@ namespace Videogioco
         public MainWindow()
         {
             InitializeComponent();
-            //gestore = new GestoreXml();
+            gestore = new GestoreXml();
 
-            //impostazioni = gestore.CaricaImpostazioni(Impostazione.CONFIG_FILE);
-            //impostazioni.AggiornaAudio();
+            impostazioni = gestore.CaricaImpostazioni(Impostazione.CONFIG_FILE);
+            impostazioni.AggiornaAudio();
         }
       
         private void btnStart_Click(object sender, RoutedEventArgs e)

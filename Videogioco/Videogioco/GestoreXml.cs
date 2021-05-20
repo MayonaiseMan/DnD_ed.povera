@@ -42,7 +42,7 @@ namespace Videogioco
             catch(Exception ex)
             {
                  
-                return new Impostazione();
+                return new Impostazione(true);
             }        
         
         }
