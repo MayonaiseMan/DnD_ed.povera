@@ -56,9 +56,8 @@
         <ComboBox x:Name="armatura_combo" HorizontalAlignment="Left" Margin="182,221,0,0" VerticalAlignment="Top" Width="103" Height="26"/>
         <ComboBox x:Name="ab1_combo" HorizontalAlignment="Left" Margin="182,256,0,0" VerticalAlignment="Top" Width="103" Height="26"/>
         <ComboBox x:Name="abilita_combo" HorizontalAlignment="Left" Margin="182,291,0,0" VerticalAlignment="Top" Width="103" Height="26"/>
-        <Image HorizontalAlignment="Left" Height="29" Margin="10,10,0,0" VerticalAlignment="Top" Width="35" Source="Book_and_Quil.png"/>
         <Image HorizontalAlignment="Left" Height="100" Margin="553,247,0,0" VerticalAlignment="Top" Width="100"/>
-        <Button x:Name="ok_btn" Content="" HorizontalAlignment="Left" Margin="659,372,0,0" VerticalAlignment="Top" Width="133" Height="47" Click="ok_btn_Click">
+        <Button x:Name="ok_btn" Content="CREA" HorizontalAlignment="Left" Margin="588,324,0,0" VerticalAlignment="Top" Width="154" Height="57" Click="ok_btn_Click" FontSize="42" FontFamily="SimSun">
             <Button.Background>
                 <ImageBrush ImageSource="green_button.png"/>
             </Button.Background>

@@ -25,12 +25,12 @@
             </Button.Background>
         </Button>
         <Image HorizontalAlignment="Left" Height="24" Margin="342,240,0,0" VerticalAlignment="Top" Width="78" Source="CLEAR.png"/>
-        <Button x:Name="btnStatistiche" Content="" HorizontalAlignment="Left" Margin="256,352,0,0" VerticalAlignment="Top" Width="205" Height="48" Click="btnStatistiche_Click">
+        <Button x:Name="btnStatistiche" Content="STAT. PERSONAGGIO" HorizontalAlignment="Left" Margin="256,352,0,0" VerticalAlignment="Top" Width="205" Height="48" Click="btnStatistiche_Click" FontFamily="SimSun" FontSize="20">
             <Button.Background>
                 <ImageBrush ImageSource="green_button.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnCreaPersonaggio" Content="" HorizontalAlignment="Left" Margin="543,352,0,0" VerticalAlignment="Top" Width="205" Height="48" Click="btnCreaPersonaggio_Click">
+        <Button x:Name="btnCreaPersonaggio" Content="NUOVO PERSONAGGIO" HorizontalAlignment="Left" Margin="543,352,0,0" VerticalAlignment="Top" Width="205" Height="48" Click="btnCreaPersonaggio_Click" FontFamily="SimSun" FontSize="20">
             <Button.Background>
                 <ImageBrush ImageSource="green_button.png"/>
             </Button.Background>

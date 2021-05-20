@@ -26,7 +26,6 @@
         </Button>
         <Label Content="" HorizontalAlignment="Left" Margin="182,81,0,0" VerticalAlignment="Top" Width="103" Background="White"/>
         <Label Content="" HorizontalAlignment="Left" Margin="182,116,0,0" VerticalAlignment="Top" Width="103" Background="White"/>
-        <Image HorizontalAlignment="Left" Height="29" Margin="10,10,0,0" VerticalAlignment="Top" Width="35" Source="Book_and_Quil.png"/>
         <Label Content="" HorizontalAlignment="Left" Margin="182,10,0,0" VerticalAlignment="Top" Width="103" Background="White"/>
         <Label Content="" HorizontalAlignment="Left" Margin="182,46,0,0" VerticalAlignment="Top" Width="103" Background="White"/>
         <Label Content="" HorizontalAlignment="Left" Margin="182,151,0,0" VerticalAlignment="Top" Width="103" Background="White"/>
