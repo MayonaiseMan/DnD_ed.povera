@@ -26,7 +26,7 @@ namespace Videogioco
         Impostazione impostazioni;
         FinestraGioco _mainGioco;
         GestoreXml gestore;
-        SoundPlayer splayer;
+        SoundPlayer musica;
 
 
 
@@ -34,9 +34,9 @@ namespace Videogioco
         {
             InitializeComponent();
             gestore = new GestoreXml();
-            splayer = new SoundPlayer(@"audio\musica1.wav");
+            musica = new SoundPlayer(@"audio\musica1.wav");
             impostazioni = gestore.CaricaImpostazioni(Impostazione.CONFIG_FILE);
-            splayer.Play();
+            musica.Play();
         }
       
         private void btnStart_Click(object sender, RoutedEventArgs e)
