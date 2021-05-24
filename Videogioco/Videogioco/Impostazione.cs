@@ -126,7 +126,7 @@ namespace Videogioco
             {
                 musica.Filter = "MP3 files (*.mp3)|*.mp3|All files (*.*)|*.*";
                 musica.FileName = PERCORSO_MUSICA;
-                RiproduciMusica(); //Esecuzione del metodo non funzionante
+                //RiproduciMusica(); //Esecuzione del metodo non funzionante
             }
             else
             {

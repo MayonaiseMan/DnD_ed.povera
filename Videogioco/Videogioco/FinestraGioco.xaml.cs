@@ -24,12 +24,17 @@ namespace Videogioco
         CreaPersonaggio _mainPersonaggio;
         StatistichePersonaggio _mainStatistiche;
         BattagliaFinestra _mainScontro;
+        Personaggio personaggio1, personaggio2;      
+
 
         public FinestraGioco(MainWindow main, Impostazione i)
         {
             InitializeComponent();
             gioco = new Gioco();
             start = main;
+            lstPersonaggi.ItemsSource = gioco.Personaggi;
+            btnStatistiche.Visibility = Visibility.Hidden; //Prova
+            btnCreaPersonaggio.Visibility = Visibility.Hidden; //Prova
         }
 
         private void btnCreaPersonaggio_Click(object sender, RoutedEventArgs e)
@@ -48,9 +53,34 @@ namespace Videogioco
 
         private void btnPaly_Click(object sender, RoutedEventArgs e)
         {
-            _mainScontro = new BattagliaFinestra();
+            _mainScontro = new BattagliaFinestra(personaggio1, personaggio2);
             _mainScontro.Show();
             this.Close();
+            
+
+        }
+
+        private void lstPersonaggi_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            if((string)lblPersonaggio1.Content == "Personaggio1")
+            {
+                personaggio1 = lstPersonaggi.SelectedItem as Personaggio;
+                lblPersonaggio1.Content = lstPersonaggi.SelectedItem.ToString();
+            }
+            else
+            {
+                if ((string)lblPersonaggio2.Content == "Personaggio2")
+                {
+                    personaggio2 = lstPersonaggi.SelectedItem as Personaggio;
+                    lblPersonaggio2.Content = lstPersonaggi.SelectedItem.ToString();
+                }
+            }
+        }
+
+        private void btnClear_Click(object sender, RoutedEventArgs e)
+        {
+            lblPersonaggio1.Content = "Personaggio1";
+            lblPersonaggio2.Content = "Personaggio2";
         }
     }
 }

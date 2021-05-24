@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfPersonaggio xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<Personaggio>
+<Nome> Gino </Nome>
+<Razza> Umano </Razza>
+<PuntiVita>120</PuntiVita>
+<Attacco>52</Attacco>
+<Difesa>82</Difesa>
+<PercorsoImmagine>gino.png</PercorsoImmagine>
+</Personaggio>
+<Personaggio>
+<Nome> Albino </Nome>
+<Razza> Alieno </Razza>
+<PuntiVita>160</PuntiVita>
+<Attacco>43</Attacco>
+<Difesa>80</Difesa>
+<PercorsoImmagine>albino.png</PercorsoImmagine>
+</Personaggio>
+<Personaggio>
+<Nome> Nello </Nome>
+<Razza> Umano </Razza>
+<PuntiVita>104</PuntiVita>
+<Attacco>60</Attacco>
+<Difesa>86</Difesa>
+<PercorsoImmagine>nello.png</PercorsoImmagine>
+</Personaggio>
+</ArrayOfPersonaggio>

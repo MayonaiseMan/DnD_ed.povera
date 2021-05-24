@@ -59,7 +59,7 @@ namespace Videogioco
         public List<Personaggio> Personaggi
         {
             get;
-            private set;
+            set;
         }
 
         public Impostazione Impostazioni

@@ -19,223 +19,46 @@ using System.Windows.Interop;
 
 namespace Videogioco
 {
-    [XmlRoot(ElementName = "Personaggio")]
     public class Personaggio
     {
+        string _nome;
+
+        string _razza;
+
+        int _HP;
+
+        int _attacco;
+
+        int _difesa;
+
+        string _percorsoImmagine;
+
+        BitmapImage immagine;
 
         public Personaggio()
         { 
+
         }
 
-        public Personaggio(string nome, razza r, int puntiVita, int A1, int A2, int Katt, int Kdif)
+        public Personaggio(string nome, string r, int puntiVita, int Katt, int Kdif, string percorsoImmagine)
         {
             if (string.IsNullOrEmpty(nome) == false)
-                _nome = nome;
+                Nome = nome;
             else
                 throw new Exception("nome non valido");
 
             Razza = r;
             if (puntiVita > 3 && puntiVita <= 18)
-                _HP = puntiVita;
+                PuntiVita = puntiVita;
             else
                 throw new Exception("hp non validi");
 
-            _abilita1 = A1;
-            _abilita2 = A2;
-            _Ka = Katt;
-            _Kd = Kdif;
-            
-            
+            Attacco = Katt;
+
+            Difesa = Kdif;
+
+            PercorsoImmagine = percorsoImmagine;
         }
-
-        public Personaggio(string nome, razza r, int puntiVita, int A1, int A2, int Katt, int Kdif, Arma arma)
-        {
-            if (string.IsNullOrEmpty(nome) == false)
-                _nome = nome;
-            else
-                throw new Exception("nome non valido");
-
-            Razza = r;
-            if (puntiVita > 3 && puntiVita <= 18)
-                _HP = puntiVita;
-            else
-                throw new Exception("hp non validi");
-
-            _abilita1 = A1;
-            _abilita2 = A2;
-            _Ka = Katt;
-            _Kd = Kdif;
-            _armaEqipaggiata = arma;
-        }
-
-        public Personaggio(string nome, razza r, int puntiVita, int A1, int A2, int Katt, int Kdif, Armatura armatura)
-        {
-            if (string.IsNullOrEmpty(nome) == false)
-                _nome = nome;
-            else
-                throw new Exception("nome non valido");
-
-            Razza = r;
-            if (puntiVita > 3 && puntiVita <= 18)
-                _HP = puntiVita;
-            else
-                throw new Exception("hp non validi");
-
-            _abilita1 = A1;
-            _abilita2 = A2;
-            _Ka = Katt;
-            _Kd = Kdif;
-            _armaturaEquipaggiata = armatura;
-        }
-
-        public Personaggio(string nome, razza r, int puntiVita, int A1, int A2, int Katt, int Kdif, Arma arma, Armatura armatura)
-        {
-            if (string.IsNullOrEmpty(nome) == false)
-                _nome = nome;
-            else
-                throw new Exception("nome non valido");
-
-            Razza = r;
-            if (puntiVita > 3 && puntiVita <= 18)
-                _HP = puntiVita;
-            else
-                throw new Exception("hp non validi");
-
-            _abilita1 = A1;
-            _abilita2 = A2;
-            _Ka = Katt;
-            _Kd = Kdif;
-            _armaEqipaggiata = arma;
-            _armaturaEquipaggiata = armatura;
-        }
-
-        public Personaggio(string nome, razza r, int puntiVita, int A1, int A2, int Katt, int Kdif, BitmapImage img)
-        {
-            if (string.IsNullOrEmpty(nome) == false)
-                _nome = nome;
-            else
-                throw new Exception("nome non valido");
-
-            Razza = r;
-            if (puntiVita > 3 && puntiVita <= 18)
-                _HP = puntiVita;
-            else
-                throw new Exception("hp non validi");
-
-            _abilita1 = A1;
-            _abilita2 = A2;
-            _Ka = Katt;
-            _Kd = Kdif;
-            immagine = img;
-        }
-
-        public Personaggio(string nome, razza r, int puntiVita, int A1, int A2, int Katt, int Kdif, Arma arma, BitmapImage img)
-        {
-            if (string.IsNullOrEmpty(nome) == false)
-                _nome = nome;
-            else
-                throw new Exception("nome non valido");
-
-            Razza = r;
-            if (puntiVita > 3 && puntiVita <= 18)
-                _HP = puntiVita;
-            else
-                throw new Exception("hp non validi");
-
-            _abilita1 = A1;
-            _abilita2 = A2;
-            _Ka = Katt;
-            _Kd = Kdif;
-            _armaEqipaggiata = arma;
-            immagine = img;
-        }
-
-        public Personaggio(string nome, razza r, int puntiVita, int A1, int A2, int Katt, int Kdif, Armatura armatura, BitmapImage img)
-        {
-            if (string.IsNullOrEmpty(nome) == false)
-                _nome = nome;
-            else
-                throw new Exception("nome non valido");
-
-            Razza = r;
-            if (puntiVita > 3 && puntiVita <= 18)
-                _HP = puntiVita;
-            else
-                throw new Exception("hp non validi");
-
-            _abilita1 = A1;
-            _abilita2 = A2;
-            _Ka = Katt;
-            _Kd = Kdif;
-            _armaturaEquipaggiata = armatura;
-            immagine = img;
-        }
-
-        public Personaggio(string nome, razza r, int puntiVita, int A1, int A2, int Katt, int Kdif, Arma arma, Armatura armatura, BitmapImage img)
-        {
-            if (string.IsNullOrEmpty(nome) == false)
-                _nome = nome;
-            else
-                throw new Exception("nome non valido");
-
-            Razza = r;
-            if (puntiVita > 3 && puntiVita <= 18)
-                _HP = puntiVita;
-            else
-                throw new Exception("hp non validi");
-
-            _abilita1 = A1;
-            _abilita2 = A2;
-            _Ka = Katt;
-            _Kd = Kdif;
-            _armaEqipaggiata = arma;
-            _armaturaEquipaggiata = armatura;
-            immagine = img;
-        }
-
-        [XmlElement(ElementName = "nome")]
-        string _nome;
-        
-        
-        public enum razza { elfo = 55, umano = 45, nano = 30, halfling = 70};
-
-
-        
-
-        [XmlElement(ElementName = "Razza")]
-        public razza Razza
-        {
-            get;
-            private set;
-        }
-
-
-        [XmlElement(ElementName = "HP", DataType = "int")]
-        int _HP;
-
-        [XmlElement(ElementName = "arma")]
-        Arma _armaEqipaggiata;
-
-        [XmlElement(ElementName = "armatura")]
-        Armatura _armaturaEquipaggiata;
-
-        [XmlElement(ElementName = "abilita1", DataType = "int")]
-        int _abilita1;
-
-        [XmlElement(ElementName = "abilita2", DataType = "int")]
-        int _abilita2;
-
-        [XmlElement(ElementName = "Ka", DataType = "int")]
-        int _Ka;
-
-        [XmlElement(ElementName = "Kd", DataType = "int")]
-        int _Kd;
-
-       
-        BitmapImage immagine;
-
-        [XmlElement(ElementName = "img", IsNullable =  true)]
-        XElement stringaImg = null;
 
         public void AddImg(BitmapImage img)
         {
@@ -250,14 +73,14 @@ namespace Videogioco
             XElement img = new XElement("image",
                 Convert.ToBase64String(
                     (byte[])converter.ConvertTo(bmp, typeof(byte[]))));
-            stringaImg = img;
+            PercorsoImmagine = bmp.UriSource.ToString();
 
         }
 
 
         public void CaricaImmagine()
         {
-            string val = stringaImg.Value;
+            string val = PercorsoImmagine;
             byte[] bytes = Convert.FromBase64String(val);
             MemoryStream mem = new MemoryStream(bytes);
             Bitmap bmp2 = new Bitmap(mem);
@@ -294,15 +117,6 @@ namespace Videogioco
              
         }
 
-
-        public Abilita AbilitaPossibili
-        {
-            get;
-            set;         
-        }
-
-        private int _exp;
-
         public void UsaAbilita()
         {
              
@@ -333,6 +147,81 @@ namespace Videogioco
         public void UsaArmatura()
         {
              
+        }
+
+        public string Nome
+        {
+            get => _nome;
+            set
+            {
+                _nome = value;
+            }
+        }
+
+        public string Razza
+        {
+            get => _razza;
+            set
+            {
+                _razza = value;
+            }
+        }
+
+        public int PuntiVita
+        {
+            get => _HP;
+            set
+            {
+                _HP = value;
+            }
+        }
+
+        public int Attacco
+        {
+            get => _attacco;
+            set
+            {
+                _attacco = value;
+            }
+        }
+
+        public int Difesa
+        {
+            get => _difesa;
+            set
+            {
+                _difesa = value;
+            }
+        }
+
+        public string PercorsoImmagine
+        {
+            get => _percorsoImmagine;
+            set
+            {
+                _percorsoImmagine = value;
+            }
+        }
+
+        [XmlIgnore]
+        public BitmapImage Immagine
+        {
+            get => immagine;
+            set
+            {
+                immagine = value;
+            }
+        }
+
+        /*public Abilita AbilitaPossibili
+        {
+            get;
+            set;
+        }*/
+
+        public override string ToString()
+        {
+            return Nome;
         }
     }
 }

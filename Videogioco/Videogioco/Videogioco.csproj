@@ -238,5 +238,17 @@
   <ItemGroup>
     <Resource Include="HAI SCONFITTA.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <Resource Include="battaglia.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="albino.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="nello.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="gino.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

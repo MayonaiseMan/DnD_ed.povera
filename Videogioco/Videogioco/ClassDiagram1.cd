@@ -107,21 +107,13 @@
     <Compartments>
       <Compartment Name="Nested Types" Collapsed="false" />
     </Compartments>
-    <NestedTypes>
-      <Enum Name="Videogioco.Personaggio.razza" Collapsed="true">
-        <TypeIdentifier>
-          <NewMemberFileName>Personaggio.cs</NewMemberFileName>
-        </TypeIdentifier>
-      </Enum>
-    </NestedTypes>
     <TypeIdentifier>
-      <HashCode>AAgAICAAQABAEABAAAIACAAAEAAQIgCAAAAAACEAQAA=</HashCode>
+      <HashCode>BAgAYAAAQABAAABEEAIAiAAAEAAQIgDAAgACgCEIQgA=</HashCode>
       <FileName>Personaggio.cs</FileName>
     </TypeIdentifier>
     <ShowAsAssociation>
       <Field Name="_armaEqipaggiata" />
       <Field Name="_armaturaEquipaggiata" />
-      <Property Name="AbilitaPossibili" />
     </ShowAsAssociation>
   </Class>
   <Class Name="Videogioco.Abilita">

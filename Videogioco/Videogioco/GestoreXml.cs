@@ -11,9 +11,10 @@ namespace Videogioco
 {
     public class GestoreXml
     {
-        public GestoreXml(Gioco g)
+        public GestoreXml(Gioco gioco)
         {
-            gioco = g;
+            this.gioco = gioco;
+            gioco.Personaggi = CaricaPersonaggio("Personaggi.xml");
         }
 
         public GestoreXml()
@@ -117,25 +118,28 @@ namespace Videogioco
             }
         }
 
-        private Personaggio CaricaPersonaggio(string path)
+        private List<Personaggio> CaricaPersonaggio(string path)
         {
             try
             {
-                XmlSerializer serializer = new XmlSerializer(typeof(Personaggio));
+                XmlSerializer serializer = new XmlSerializer(typeof(List<Personaggio>));
 
-                Personaggio tmp;
-
-                using (Stream reader = new FileStream(path, FileMode.Open))
+                using (StreamReader sr = new StreamReader(path))
                 {
-                    tmp = (Personaggio)serializer.Deserialize(reader);
-                }
-
-                
-                return tmp;
+                    if (sr.ReadLine() != null)
+                    {
+                        return serializer.Deserialize(sr) as List<Personaggio>;
+                    }
+                    else
+                    {
+                        return new List<Personaggio>();
+                    }
+                    
+                }            
             }
             catch (Exception ex)
             {
-                return null;                
+                throw ex;    
             }
         }
 
@@ -143,13 +147,13 @@ namespace Videogioco
         {
             try
             {
-                XmlSerializer serializer = new XmlSerializer(typeof(Personaggio));
+                XmlSerializer serializer = new XmlSerializer(typeof(List<Personaggio>));
 
 
 
-                using (Stream writer = new FileStream(path, FileMode.Open))
+                using (StreamWriter sw = new StreamWriter(path, false))
                 {
-                    serializer.Serialize(writer, p);
+                    serializer.Serialize(sw, p);
                 }
 
 

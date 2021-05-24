@@ -10,7 +10,7 @@
         Title="FinestraGioco" Height="450" Width="800">
     <Grid OverridesDefaultStyle="True">
         <Image HorizontalAlignment="Left" Height="450" VerticalAlignment="Top" Width="800" Source="Battaglia.png" Margin="0,0,-6,-29"/>
-        <ListBox x:Name="lstPersonaggi" HorizontalAlignment="Left" Height="319" Margin="26,81,0,0" VerticalAlignment="Top" Width="186"/>
+        <ListBox x:Name="lstPersonaggi" HorizontalAlignment="Left" Height="319" Margin="26,81,0,0" VerticalAlignment="Top" Width="186" SelectionChanged="lstPersonaggi_SelectionChanged"/>
         <Label x:Name="lblTitolo" Content="PERSONAGGI" HorizontalAlignment="Left" Margin="26,10,0,0" VerticalAlignment="Top" Width="186" Height="61" FontFamily="SimSun" FontSize="36"/>
         <Label x:Name="lblPersonaggio1" Content="Personaggio1" HorizontalAlignment="Left" Margin="245,81,0,0" VerticalAlignment="Top" Width="253" Height="46" Background="White"/>
         <Label x:Name="lblPersonaggio2" Content="Personaggio2" HorizontalAlignment="Left" Margin="245,157,0,0" VerticalAlignment="Top" Width="253" Height="46" Background="White"/>
@@ -19,7 +19,7 @@
                 <ImageBrush ImageSource="PLAY.png"/>
             </Button.Background>
         </Button>
-        <Button x:Name="btnClear" Content="" HorizontalAlignment="Left" Margin="330,228,0,0" VerticalAlignment="Top" Width="103" Height="47">
+        <Button x:Name="btnClear" Content="" HorizontalAlignment="Left" Margin="330,228,0,0" VerticalAlignment="Top" Width="103" Height="47" Click="btnClear_Click">
             <Button.Background>
                 <ImageBrush ImageSource="green_button.png"/>
             </Button.Background>
