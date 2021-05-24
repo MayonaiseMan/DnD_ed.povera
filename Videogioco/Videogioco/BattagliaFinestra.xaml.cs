@@ -54,7 +54,7 @@ namespace Videogioco
                     img1.Margin = new Thickness(margine, 175, 0, 0);
 
                 }));
-                Thread.Sleep(TimeSpan.FromMilliseconds(5));
+                Thread.Sleep(TimeSpan.FromMilliseconds(10));
             }
         }
 
@@ -72,7 +72,7 @@ namespace Videogioco
                     img2.Margin = new Thickness(margine, 175, 0, 0);
 
                 }));
-                Thread.Sleep(TimeSpan.FromMilliseconds(5));
+                Thread.Sleep(TimeSpan.FromMilliseconds(10));
             }
         }
     }

@@ -10,11 +10,11 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System.IO;
-using System.Xml;
 using System.Xml.Serialization;
+using System.Threading;
+using System.Media;
 
 namespace Videogioco
 {
@@ -26,16 +26,17 @@ namespace Videogioco
         Impostazione impostazioni;
         FinestraGioco _mainGioco;
         GestoreXml gestore;
-            
+        SoundPlayer splayer;
+
 
 
         public MainWindow()
         {
             InitializeComponent();
             gestore = new GestoreXml();
-
+            splayer = new SoundPlayer(@"audio\musica1.wav");
             impostazioni = gestore.CaricaImpostazioni(Impostazione.CONFIG_FILE);
-            impostazioni.AggiornaAudio();
+            splayer.Play();
         }
       
         private void btnStart_Click(object sender, RoutedEventArgs e)
